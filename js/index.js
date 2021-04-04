@@ -68,7 +68,6 @@ document.addEventListener('click', (e) => {
 
 
 
-
 // const btnActive = document.querySelectorAll('.btn-active');
 // btnActive.forEach((btn)	=> {
 // 			btn.addEventListener('click', function() {

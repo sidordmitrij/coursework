@@ -156,6 +156,7 @@
     color: var(--white);
     border-bottom: 1px solid var(--white);
     background-color: transparent;
+    animation: line 1s linear;
 }
 
 .header__bottom {
@@ -232,6 +233,7 @@
 
 .scrollbar.visible {
     display: block;
+    animation: visible 1s ease;
 }
 
 .simplebar-content-wrapper { 
@@ -447,6 +449,15 @@
         margin-right: 0;
         background-image: url("data:image/svg+xml,%3Csvg width='30' height='29' viewBox='0 0 30 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='9.15446' height='2.28862' transform='matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z' fill='white'/%3E%3C/svg%3E%0A");
     }
+
+    .header__form-search:hover .header-search {
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='29' viewBox='0 0 30 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='9.15446' height='2.28862' transform='matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)' fill='%23C283F3'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z' fill='%23C283F3'/%3E%3C/svg%3E%0A");
+    }
+
+    .header__form-search:hover .header-search-text {
+        border-bottom: 1px solid var(--dark-lilac);
+    }
+    
 }
 
 @media (max-width: 320px) {
@@ -462,6 +473,13 @@
         width: 97px;
         height: 22px;
     }
+
+    .header__logo {
+        position: absolute;
+        top: calc(50% - 11px);
+        left: calc(50% - 48px);
+    }
+
     .header-search {
         width: 15px;
         height: 15px;

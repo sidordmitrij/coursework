@@ -243,7 +243,15 @@ img {
   border-radius: 29px;
 }
 
+@keyframes visible {
+  from {height: 100px;}
+  to {height: 300px}
+}
 
+@keyframes line {
+  from {width: 0;}
+  to {width: 100%;}
+}
 
 @media (max-width: 1024px) {
   .container {
@@ -259,4 +267,11 @@ img {
   /* .container {
     max-width: 700px;
   }     */
+}
+
+  @media (max-width: 500px) {
+    .container {
+      padding: 0 15px;
+    }
+  
 }
