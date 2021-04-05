@@ -27,7 +27,7 @@ body {
     margin: 0; */
   background-color: var(--white);
   /* под проект */
-  font-family: 'OpenSans', Arial, sans-serif;
+  font-family: OpenSans, sans-serif;
   /* в "" свой шрифт под проект*/
   font-size: 16px;
   font-weight: 400;
@@ -37,6 +37,7 @@ body {
 
 button,
 input {
+  font-family: OpenSans;
   font: inherit;
   outline: none;
   border: none;
@@ -110,7 +111,7 @@ img {
   /*задаем контейнеру размеры*/
   max-width: 1630px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 } 
 
 .logo {
@@ -269,9 +270,9 @@ img {
   }     */
 }
 
-  @media (max-width: 500px) {
-    .container {
-      padding: 0 15px;
-    }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 15px;
+  }
   
 }

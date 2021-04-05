@@ -60,7 +60,6 @@
 .catalog__text {
     max-width: 1075px;
     margin-bottom: 38px;
-    letter-spacing: 0.6px;
 }
 
 .catalog__content {
@@ -86,7 +85,6 @@
 
 .biography {
     min-width: 95%;
-    letter-spacing: 0.5px;
 }
 
 .period-heading {

@@ -15,9 +15,8 @@
     margin-bottom: 20px;
     font-size: 72px;
     font-weight: 700;
-    font-stretch: 25px;
     line-height: 82.8px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 
 .hero__content-text {
@@ -25,7 +24,6 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0.8px;
 }
 
 .hero__content-btn {
@@ -153,10 +151,10 @@
 
 }
 
-@media (max-width: 500px) {
-    .hero__container {
+@media (max-width: 520px) {
+    /* .hero__container {
         margin-bottom: 45px;
-    }
+    } */
     .hero__content {
         padding-top: max(10vw, 35px);
         text-align: center;  
