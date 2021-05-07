@@ -4,13 +4,13 @@ window.addEventListener('DOMContentLoaded', function() {
 //BURGER-MENU
 document.querySelector('.header__burger-menu').addEventListener('click', function() {
     // обращаемся к документу и запускаем обработчик события 'клик' и запускаем функцию
-		document.querySelector('.header__hide').classList.add('is-active') 
+		document.querySelector('.header__menu').classList.add('is-active') 
 		document.querySelector('.header__btn-hide').classList.add('is-active') 
 });
 
 //EXIT-BURGER
 document.querySelector('.header__btn-hide').addEventListener('click', function() {
-    	document.querySelector('.header__hide.is-active').classList.remove('is-active') 
+    	document.querySelector('.header__menu.is-active').classList.remove('is-active') 
 		document.querySelector('.header__btn-hide.is-active').classList.remove('is-active') 
 });
 
@@ -58,7 +58,7 @@ else if (document.documentElement.clientWidth <= 768) {
 	document.querySelector('.header-search').addEventListener('click', function() {
     	document.querySelector('.header-search-text').classList.toggle('is-active') 
 	});
-	}
+}
 
 
 //SELECT-HEADER-BOTTOM
@@ -67,7 +67,7 @@ const drop = document.querySelectorAll('.scrollbar')
 
 button.forEach(el => {
   el.addEventListener('click', (e) => {
-    drop.forEach(el => {el.classList.remove(('visible'))})
+    drop.forEach(el => {el.classList.remove('visible')})
     e.currentTarget.closest('li').querySelector('.scrollbar').classList.toggle('visible');
   });
 });
@@ -75,21 +75,9 @@ button.forEach(el => {
 document.addEventListener('click', (e) => {
   console.log(e.target)
   if (!e.target.classList.contains('.scrollbar') && !e.target.classList.contains('.btn-active')) {
-    drop.forEach(el => {el.classList.remove(('.visible'))})
+    drop.forEach(el => {el.classList.remove('.visible')})
   }
 });
-
-
-
-
-// const btnActive = document.querySelectorAll('.btn-active');
-// btnActive.forEach((btn)	=> {
-// 			btn.addEventListener('click', function() {
-// 				btn.parentNode.querySelector('.scrollbar').classList.toggle('visible') 
-					
-// 			});
-// });
-
 
 
 //SELECT-GALLERY
@@ -119,18 +107,18 @@ selects.forEach((sel) => {
 	var gallerySwiper = new Swiper('.gallery__swiper', {
 
 		slidesPerView: 1,
-		// slidesPerColumn: 1,
-		// spaceBetween: 34,
+		slidesPerColumn: 1,
+		//spaceBetween: 50,
 		slidesPerGroup: 1,
 	
 		breakpoints: {
 			450: {
 				slidesPerView: 2,
-				slidesPerColumn: 1,
+				//slidesPerColumn: 1,
 				spaceBetween: 34,
 				slidesPerGroup: 2,
 			},
-			680: {
+			681: {
 				slidesPerView: 2,
 				slidesPerColumn: 2,
 				spaceBetween: 34,
@@ -177,23 +165,19 @@ selects.forEach((sel) => {
 		
 
 	//EVENTS-CARD
-	const eventsBtn = document.querySelectorAll('.events__btn');
-	eventsBtn.forEach((btn)	=> {
-				btn.addEventListener('click', function() {
-					btn.parentNode.querySelector('.card-invisible').classList.toggle('hide') 
-				});
-	});
+	let eventNews = function () {
+		let eventCard = document.querySelectorAll('.event-card'),
+			eventBtn = document.querySelector('.events__btn');
 
-		// const navbottomBtn = document.querySelectorAll('.header__nav-bottom-btn');
-		// navbottomBtn.forEach((btn)	=> {
-		// 			btn.addEventListener('click', function() {
-		// 				 // обращаемся к документу и запускаем обработчик события 'клик' и запускаем функцию
-		// 					btn.parentNode.querySelector('.scrollbar').classList.toggle('visible') 
-		// 			});
-		// });
-
-
-
+		eventBtn.addEventListener('click', function () {
+			eventCard.forEach(item => {
+				item.style.display = 'flex';
+				eventBtn.style.display = 'none';
+			})
+		});
+	};
+	eventNews();
+	
 	//PUBLICATIONS
 	//Publication-check
 	const checkHeader = document.querySelectorAll('.check-header');
@@ -202,7 +186,7 @@ selects.forEach((sel) => {
 			 	btn.parentNode.querySelector('.publication-item').classList.toggle('is-active') 
 					
 			});
-});
+	});
 
 
 	//PUBLICATIONS-SWIPER
@@ -214,15 +198,15 @@ selects.forEach((sel) => {
 		slidesPerGroup: 1,
 	
 		breakpoints: {
-			750: {
+			950: {
 				slidesPerView: 2,
-				spaceBetween: 34,
+				spaceBetween: 50,
 				observer: true,
 			},
 			1500: {
 				slidesPerView: 3,
 				spaceBetween: 50,
-				slidesPerGroup: 3,
+				//slidesPerGroup: 3,
 			},
 		},
 	
@@ -247,7 +231,7 @@ var projectsSwiper = new Swiper('.project__swiper', {
 	slidesPerGroup: 1,
 	
 	breakpoints: {
-		880: {
+		767: {
 			slidesPerView: 2,
 	 		spaceBetween: 34,
 	 		slidesPerGroup: 2,
@@ -265,6 +249,62 @@ var projectsSwiper = new Swiper('.project__swiper', {
 	},
 
 });	
+
+
+
+//TAB COLOR
+const border = document.querySelectorAll('.catalog__tab-btn');
+const periodLink  = document.querySelectorAll('.accordion__period-link');
+
+border.forEach(tabBtn => {
+	tabBtn.addEventListener('click', (color) => {
+		border.forEach(tabBtn => {tabBtn.classList.remove('tab-active')});
+		periodLink.forEach(tabBtn => {tabBtn.classList.remove('tab-active')});
+
+		color.currentTarget.closest('li').querySelector('.catalog__tab-btn').classList.toggle('tab-active');
+		color.currentTarget.closest('li').querySelector('.accordion__period-link').classList.toggle('tab-active');
+	
+	});
+});
+
+periodLink.forEach(tabBtn => {
+	tabBtn.addEventListener('click', (color) => {
+		periodLink.forEach(tabBtn => {tabBtn.classList.remove('tab-active')});
+
+			color.currentTarget.closest('li').querySelector('.accordion__period-link').classList.toggle('tab-active');
+	
+	});
+});
+
+// //TAB COUNTRY
+document.querySelectorAll('.catalog__tab-btn').forEach(function(catalogTabBtn) {
+	catalogTabBtn.addEventListener('click', function(event){
+				
+	  const path = event.currentTarget.dataset.path
+	  document.querySelectorAll('.accordion__period-item').forEach(function(periodItem){
+		periodItem.classList.remove('tab-active')
+	  })
+
+	document.querySelectorAll(`[data-target="${path}"]`).forEach(function(periodItem){
+	  periodItem.classList.add('tab-active')
+	  
+	})
+  })
+})
+  
+//TAB AVTOR
+document.querySelectorAll('.accordion__period-link').forEach(function(periodLink) {
+	periodLink.addEventListener('click', function(event){
+		
+	  const path = event.currentTarget.dataset.path
+	  document.querySelectorAll('.catalog__card').forEach(function(periodLink){
+		periodLink.classList.remove('tab-active')
+	  })
+	  document.querySelector(`[data-target="${path}"]`).classList.add('tab-active')
+	  
+	})
+  })  
+
 
 
 //Accordion
@@ -300,7 +340,8 @@ $( function() {
 	  collapsible: true
 	});
  
- //MAPS
+	
+	//MAPS
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(init);
@@ -379,6 +420,37 @@ $( function() {
 		});
 	});
 	
+
+//SCROLL PAGE
+
+// $(document).ready(function(){
+// 	$('[href^="#"]').on('click', function(event){
+// 		 if ($(this).attr('hash') !== "") {
+// 		 event.preventDefault();
+// 		 let hash = $(this).prop('hash');
+// 		 $('html, body').animate({
+// 		   scrollTop: $(hash).offset().top
+// 		 }, 800, function(){
+// 		 });
+// 	   }
+// 	 });
+// 	});
+
+
+// $(document).ready(function(){
+// 	$("a[href*=#]").on("click", function(e){
+// 	  var anchor = $(this);
+// 	  $('html, body').stop().animate({
+// 		scrollTop: $(anchor.attr('href')).offset().top
+// 	  }, 777);
+// 	  e.preventDefault();
+// 	  return false;
+// 	});
+//   });
+
+
+
+
 
 
 

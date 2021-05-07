@@ -5,61 +5,73 @@
 
 .catalog__tab {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .catalog__nav {
     display: flex;
+    transform: translateY(-13px);
 }
 
 .catalog__header {
-    margin-right: 47px;
+    margin-right: 41px;
 }
 
-.catalog__tab-btn {
-    display: block;
-    width: 46px;
-    height: 46px;
-}
-
-.catalog__tab-btn.is-active::after {
+.catalog__tab-btn::after {
     content: "";
-    display: block;
-    width: 65px;
-    height: 65px;
+    display: none;
+    width: 66px;
+    height: 66px;
     background-color: transparent;
     border: 2px solid var(--dark-lilac);
     border-radius: 50px;
-    transform: translate(-15px, -10px);
+    transform: translate(-16px, -11px);
+}
+
+.catalog__tab-btn.tab-active::after {
+    display: block;
 }
 
 .catalog__item:not(:last-child) {
     margin-right: 50px;
 }
 
+.catalog__tab-btn {
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 6px auto;
+    /* background-size: cover; */
+}
+
 .tab-btn-franse {
     background: url(../img/franse.png) center center no-repeat;
+    background-size: cover;
 }
 
 .tab-btn-germany {
     background: url(../img/germany.png) center center no-repeat;
+    background-size: cover;
 }
 
 .tab-btn-italy {
     background: url(../img/italy.png) center center no-repeat;
+    background-size: cover;
 }
 
 .tab-btn-rus {
     background: url(../img/rus.png) center center no-repeat;
+    background-size: cover;
 }
 
 .tab-btn-belgiym {
     background: url(../img/belgium.png) center center no-repeat;
+    background-size: cover;
 }
 
 .catalog__text {
     max-width: 1075px;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
 }
 
 .catalog__content {
@@ -67,19 +79,24 @@
     justify-content: space-between;
 }
 
-.catalog__biography {
+.catalog__card {
+    display: none;
     width: 47%;
+}
+
+.catalog__card.tab-active {
+    display: block;
 }
 
 .catalog__accordion {
     width: 50%;
 }
 /* 
-.catalog__biography {
+.catalog__card {
     margin-right: 15px;
 } */
 
-.catalog__biography-picture {
+.catalog__card-picture {
     margin-bottom: 20px;
 }
 
@@ -96,7 +113,7 @@
 .accordion__period-list
 /* .ui-accordion-content-active */
  {
-    height: 340px;
+    max-height: 340px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -132,13 +149,16 @@
 
 .ui-accordion .ui-accordion-content {
     padding-top: 2em;
-    padding-right: 0;
     padding-left: 0;
 }
 
 .accordion__period-link:hover {
     border-bottom: 1px solid var(--lilac);
-} 
+}
+
+.accordion__period-link.tab-active {
+    color: var(--lilac);
+}
 
 /* .ui-accordion .ui-accordion-content:nth-of-type(3n)  
 .accordion__period-item:nth-of-type(3n) {
@@ -185,25 +205,46 @@
 }
 
 .accordion__period-item {
+    display: none;
     height: 32px;
     margin-right: 30px;
+}
+
+.accordion__period-item.tab-active {
+    display: block;
 }
 
 .accordion__period-link {
     font-size: 16px;
     line-height: 10px;
-    letter-spacing: 1px;
+    border-bottom: transparent;
+    transition: border .5s ease;
 }
 
 @media (max-width: 1300px) {
+    .catalog__container {
+        margin-bottom: 105px;
+    }
+    .catalog__nav {
+        transform: translateY(-6px);
+    }
     .catalog__tab {
-        margin-bottom: 14px;
+        margin-bottom: 3px;
+    }
+    .catalog__text {
+        margin-bottom: 38px;
+    }
+    .catalog__card-picture {
+        margin-bottom: 25px;
     }
     .catalog__accordion {
         width: 47%;
     }
     .ui-accordion-content-active {
-        height: 438px;
+        max-height: 438px;
+    }
+    .accordion__period-item {
+        margin-right: 50px;
     }
 }
 
@@ -211,8 +252,17 @@
     .catalog__container {
         margin-bottom: 87px;
     }
+    .catalog__header {
+        margin-right: 33px;
+    }
+    .catalog__nav {
+        transform: translateY(-13px);
+    }
     .catalog__accordion {
         margin-bottom: 50px;
+    }
+    .catalog__item:not(:last-child) {
+        margin-right: 54px;
     }
     .catalog__text {
         margin-bottom: 20px;
@@ -220,7 +270,7 @@
     .catalog__content {
         flex-direction: column-reverse;        
     }
-    .catalog__biography,
+    .catalog__card,
     .catalog__accordion {
         width: 100%;
     }
@@ -229,7 +279,7 @@
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 750px) {
     .catalog__container {
         margin-bottom: 55px;
     }
@@ -237,20 +287,20 @@
         display: block;
     }
     .catalog__header {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .catalog__tab-btn {
         width: 32px;
         height: 32px;
         border-radius: 50px;
     }
-    .catalog__tab-btn.is-active::after {
-        width: 45px;
-        height: 45px;
-        transform: translate(-13px, -7px);
-    }
     .catalog__item:not(:last-child) {
         margin-right: 32px;
+    }
+    .catalog__tab-btn::after {
+        width: 50px;
+        height: 50px;
+        transform: translate(-15px, -10px);
     }
     .catalog__text {
         display: none;
@@ -264,10 +314,7 @@
     }
     .ui-accordion-content-active {
         height: 438px;
-    }
-    .accordion__period-list {
-        flex-wrap: nowrap;
-    }   
+    }    
     .period-heading {
         height: 73px;
     } 
@@ -276,21 +323,37 @@
         height: 35px;
         background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23ECECEC'/%3E%3Ccircle cx='15' cy='15' r='15' stroke='%23ECECEC'/%3E%3Cpath d='M20 14L15 19L10 14' stroke='black'/%3E%3C/svg%3E%0A") center center no-repeat;
     }
-
     .ui-state-focus .ui-icon {
         background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23ECECEC'/%3E%3Ccircle cx='15' cy='15' r='15' stroke='%23ECECEC'/%3E%3Cpath d='M20 14L15 19L10 14' stroke='black'/%3E%3C/svg%3E%0A") center center no-repeat;
     }
-
     .ui-state-hover .ui-icon {
         background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%239D5CD0'/%3E%3Ccircle cx='15' cy='15' r='15' stroke='%239D5CD0'/%3E%3Cpath d='M20 14L15 19L10 14' stroke='white'/%3E%3C/svg%3E%0A") center center no-repeat;
     }
-
     .ui-state-active .ui-icon {
         background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='15' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' fill='%23ECECEC'/%3E%3Ccircle r='15' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' stroke='%23ECECEC'/%3E%3Cpath d='M20 16L15 11L10 16' stroke='black'/%3E%3C/svg%3E%0A") center center no-repeat;
     }
-    .catalog__biography-picture {
+    .catalog__card-picture {
         margin-bottom: 12px;
     }
     
+}
+
+@media (max-width: 480px) {
+    .biography-name {
+        font-weight: 600;
+    }
+    .accordion__period-list {
+        flex-wrap: nowrap;
+    }
+    .accordion__period-list,
+    .ui-accordion-content-active {
+        max-height: none;
+    }  
+    .ui-accordion .ui-accordion-header {
+        font-size: 1.1em;
+    }
+    .ui-accordion .ui-accordion-content {
+        padding: 25px 0 11px;
+    } 
 }
   

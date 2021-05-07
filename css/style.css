@@ -33,6 +33,7 @@ body {
   font-weight: 400;
   color: var(--dark-grey);
   line-height: 32px;
+  scroll-behavior: smooth;
 }
 
 button,
@@ -109,14 +110,22 @@ img {
 
 .container {
   /*задаем контейнеру размеры*/
-  max-width: 1630px;
+  max-width: 1633px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 } 
 
 .logo {
   width: 173px;
   height: 39.9px;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
 }
 
 .swiper-button-next::after,
@@ -126,7 +135,7 @@ img {
 
 .swiper-block-btn {
   display: flex;
-  height: 77px;
+  height: 69px;
 }
 
 .block-prev,
@@ -134,6 +143,10 @@ img {
   position: relative;
   width: 30px;
   height: 30px;
+}
+
+.block-prev {
+  margin-right: 20px;
 }
 
 .block-prev {
@@ -168,7 +181,8 @@ img {
 
 .block-pagination {
   position: relative;
-  width: 80px;
+  width: auto;
+  margin-right: 20px;
   padding-top: 25px;
   align-items: center;
   text-align: center;
@@ -245,7 +259,7 @@ img {
 }
 
 @keyframes visible {
-  from {height: 100px;}
+  from {height: 0;}
   to {height: 300px}
 }
 
@@ -263,7 +277,7 @@ img {
 
 @media (max-width: 768px) {
   h2 {
-    font-size: max(6.5vw, 28px);
+    font-size: max(6vw, 28px);
   }
   /* .container {
     max-width: 700px;

@@ -1,6 +1,6 @@
 /*EVENTS*/
 .events {
-    margin-bottom: 131px;
+    margin-bottom: 137px;
 }
 .events__header {
     margin-bottom: 36px;
@@ -8,37 +8,29 @@
 
 .events__cards {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
 .event-card {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3 - 34px);
+    width: calc(100% / 3 - 38px);
     min-height: 700px;
     margin-bottom: 50px;
     border: 2px solid var(--grey);
 }
 
-/* .event-card:not(:nth-of-type(3n)) {
+.event-card:not(:nth-of-type(3n)) {
     margin-right: 50px;
-} */
+}
 
 .event-card:nth-child(n + 4) {
     display: none;
 }
-/* 
-.card-invisible {
-    display: none;
-} */
-
-.card-invisible.hide {
-    display: flex;
-}
 
 .events__card-picture {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .events__small {
@@ -95,9 +87,15 @@
 }
 
 @media (max-width: 1400px) {
+    .events__header {
+        margin-bottom: 30px;
+    }
     .event-card {
-        width: calc(100% / 3 - 17px);
+        width: calc(100% / 3 - 22px);
         min-height: 681px;
+    }
+    .event-card:not(:nth-of-type(3n)) {
+        margin-right: 27px;
     }
     .events__card-picture {
         min-height: 196px;
@@ -106,14 +104,19 @@
         line-height: 18px;
     }
     .events__card-header {
-        margin: 0 auto 5px;
         width: 77%;
+        margin: 0 auto 5px;
+        font-size: 22px;
+        letter-spacing: .5px;
     }
     .events__text {
-        letter-spacing: .5px;
+        width: 77%;
         margin: 0 auto auto;
         padding-right: 0px;
-        width: 77%;
+    }
+    .events__link {
+        margin-bottom: 52px;
+        margin-left: 33px;
     }
 }
 
@@ -124,6 +127,12 @@
     }
     .event-card:nth-child(n + 3) {
         display: none;
+    }
+    .event-card:not(:nth-of-type(3n)) {
+        margin-right: 0px;
+    }
+    .event-card:nth-child(odd) {
+        margin-right: 25px;
     }
     .events__link {
         margin: 0 auto 50px 35px;
@@ -149,6 +158,7 @@
     }
     .events__card-picture {
         min-height: 200px;
+        margin-bottom: 16px;
     }
     .events__small {
         margin-right: 15px;
@@ -165,6 +175,7 @@
         width: 81%;
     }
     .events__link {
+        width: 93px;
         margin-left: 27px;
     }
 }
