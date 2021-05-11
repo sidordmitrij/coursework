@@ -256,50 +256,84 @@
 }
 
 .scrollbar {
-    display: none;
     position: absolute;
     top: 50px;
-    left: 0;
-    width: 300px;
     height: 300px;
-    padding: 0 40px;
-    background-color: rgba(0, 0, 0, .6);
+    width: 300px;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity .5s linear;
+    opacity: 0;
+    visibility: hidden;
 } 
 
 .scrollbar.visible {
-    display: block;
-    animation: visible 1s ease;
+    /* transform: none; */
+    opacity: 1;
+    visibility: visible;
 }
 
-.simplebar-offset {
+/* .header__bottom-nav-list .simplebar-vertical {
+    right: 20px;
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    background-color: #000;
+} */
+
+/* .simplebar-offset {
     padding: 40px 0;
-}
+} */
 
-.simplebar-content-wrapper { 
+/*.simplebar-content-wrapper { 
     overflow : auto ; 
-    /* padding: 20px 0; */
+    /* padding: 20px 0; 
     line-height: 24px;
     letter-spacing: .5px;
-  } 
+} 
 
-.simplebar-scrollbar::before {
-    background-color: var(--light-lilac);
-}  
+
+.scrollbar.visible:hover .simplebar-vertical {
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    margin-right: 19px;
+    opacity: 1;
+} */
+
+.simplebar-track {
+    bottom: 40px;
+    right: 19px;
+    background-color: var(--black);
+}
 
 .simplebar-track.simplebar-vertical {
-    width: 7px;
-    margin-right: 19px;
-    color: var(--black);
+    top: 40px;
+    width: 2px;
+}
+
+.simplebar-scrollbar::before {
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: var(--lilac);
+    opacity: 1;
 }
 
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
-    top: 40px;
-    bottom: 110px;
+    top: 0px;
+    bottom: 0px;
 }
 
 .header-avtor {
     height: 40px;
     width: 220px;
+    border: 2px solid transparent;
+    transition: border .3s ease;
 }
 
 .header-avtor:not(:last-child) {
@@ -338,12 +372,12 @@
 
 .header-avtor:focus,
 .header-avtor:hover {
-    border: 2px solid #9D5CD0
+    border-color: var(--lilac)
 }
 
 .header-avtor:active {
     background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(.jpg);
-    border: 2px solid #D1A9F0;
+    border: 2px solid var(--light-lilac);
 }
 
 .header__nav-select,

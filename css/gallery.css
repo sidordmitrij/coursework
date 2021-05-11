@@ -1,7 +1,7 @@
 /*GALLERY*/
 .gallery {
     position: relative;
-    max-height: 995px;
+    /* max-height: 995px; */
     margin-bottom: 100px;
     padding: 95px 0 80px;
     color: var(--white);
@@ -20,7 +20,7 @@
     /* position: relative; */
     display: block;
     width: max(22vw, 420px);
-    margin-right: 50px;
+    margin-right: 48px;
 }
 
 .gallery__header {
@@ -113,7 +113,7 @@
 .gallery__content-text {
     /* width: 400px; */
     margin-bottom: 30px;
-    letter-spacing: 1px;
+    letter-spacing: .65px;
 }
 
 .gallery__content-link {

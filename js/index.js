@@ -107,18 +107,18 @@ selects.forEach((sel) => {
 	var gallerySwiper = new Swiper('.gallery__swiper', {
 
 		slidesPerView: 1,
-		slidesPerColumn: 1,
-		//spaceBetween: 50,
+		// slidesPerColumn: 1,
+		spaceBetween: 50,
 		slidesPerGroup: 1,
 	
 		breakpoints: {
 			450: {
 				slidesPerView: 2,
-				//slidesPerColumn: 1,
+				slidesPerColumn: 1,
 				spaceBetween: 34,
 				slidesPerGroup: 2,
 			},
-			681: {
+			680: {
 				slidesPerView: 2,
 				slidesPerColumn: 2,
 				spaceBetween: 34,
@@ -198,9 +198,9 @@ selects.forEach((sel) => {
 		slidesPerGroup: 1,
 	
 		breakpoints: {
-			950: {
+			750: {
 				slidesPerView: 2,
-				spaceBetween: 50,
+				spaceBetween: 34,
 				observer: true,
 			},
 			1500: {
@@ -231,7 +231,7 @@ var projectsSwiper = new Swiper('.project__swiper', {
 	slidesPerGroup: 1,
 	
 	breakpoints: {
-		767: {
+		880: {
 			slidesPerView: 2,
 	 		spaceBetween: 34,
 	 		slidesPerGroup: 2,
