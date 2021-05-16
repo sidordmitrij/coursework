@@ -62,6 +62,7 @@
     padding-left: 50px;
     z-index: 10;
     background-color: rgba(0, 0, 0, .9);
+    transition: color .3s linear;
 }
 
 .header__menu.is-active .header__nav {
@@ -151,6 +152,7 @@
     color: var(--white);
     font-size: 18px;
     background-color: var(--black);
+    transition: color .3s linear;
 }
 
 .header__enter::before {
@@ -160,6 +162,7 @@
     height: 13px;
     margin-right: 5px;
     background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z' fill='white'/%3E%3C/svg%3E%0A") center center no-repeat;
+    transition: background-image .3s linear;
 }
 
 .header__enter:hover:before {
@@ -231,6 +234,7 @@
     letter-spacing: 1px;
     color: var(--white);
     background-color: transparent;
+    transition: color .3s linear;
 }
 
 .header__nav-bottom-btn::after {
@@ -245,6 +249,7 @@
     width: 9px;
     height: 9px;
     transform: rotate(-45deg);
+    transition: border, color .3s linear;
 }
 
 .header__bottom-nav-item:hover .header__nav-bottom-btn::after {
@@ -256,6 +261,7 @@
 }
 
 .scrollbar {
+    display: block;
     position: absolute;
     top: 50px;
     height: 300px;
@@ -266,13 +272,12 @@
     padding-bottom: 40px;
     padding-top: 40px;
     background-color: rgba(0, 0, 0, 0.4);
-    transition: opacity .5s linear;
+    transition: opacity 1s linear;
     opacity: 0;
     visibility: hidden;
 } 
 
 .scrollbar.visible {
-    /* transform: none; */
     opacity: 1;
     visibility: visible;
 }
@@ -316,12 +321,21 @@
     width: 2px;
 }
 
+.simplebar-scrollbar {
+    width: 2px;
+    background-color: var(--lilac);
+}
+
 .simplebar-scrollbar::before {
     left: 0;
     right: 0;
     border-radius: 0;
-    background-color: var(--lilac);
+    background-color: var(--white);
     opacity: 1;
+}
+
+.scrollbar:hover .simplebar-scrollbar::before {
+    background-color: var(--lilac);
 }
 
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
