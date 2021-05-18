@@ -74,8 +74,8 @@ button.forEach(el => {
 
 document.addEventListener('click', (e) => {
   console.log(e.target)
-  if (!e.target.classList.contains('.scrollbar') && !e.target.classList.contains('.btn-active')) {
-    drop.forEach(el => {el.classList.remove('.visible')})
+  if (!e.target.classList.contains('scrollbar') && !e.target.classList.contains('btn-active')) {
+    drop.forEach(el => {el.classList.remove('visible')})
   }
 });
 

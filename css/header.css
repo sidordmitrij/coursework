@@ -246,18 +246,20 @@
     top: 50%;right: 0;
     border-bottom: 1px solid var(--white);
     border-left: 1px solid var(--white);
+    border-right: transparent;
+    border-top: transparent;
     width: 9px;
     height: 9px;
     transform: rotate(-45deg);
-    transition: border, color .3s linear;
+    transition: border-color .3s ease;
 }
 
 .header__bottom-nav-item:hover .header__nav-bottom-btn::after {
     top: 22px;
     border-top: 1px solid var(--lilac);
     border-right: 1px solid var(--lilac);
-    border-left: none;
-    border-bottom: none;
+    border-left: transparent;
+    border-bottom: transparent;
 }
 
 .scrollbar {
@@ -272,43 +274,20 @@
     padding-bottom: 40px;
     padding-top: 40px;
     background-color: rgba(0, 0, 0, 0.4);
-    transition: opacity 1s linear;
     opacity: 0;
     visibility: hidden;
+    transition: opacity .3s linear;
 } 
 
-.scrollbar.visible {
+.scrollbar.visible,
+.scrollbar.visible .simplebar-track {
     opacity: 1;
     visibility: visible;
 }
 
-/* .header__bottom-nav-list .simplebar-vertical {
-    right: 20px;
-    top: 40px;
-    bottom: 40px;
-    width: 2px;
-    background-color: #000;
-} */
-
-/* .simplebar-offset {
-    padding: 40px 0;
-} */
-
-/*.simplebar-content-wrapper { 
-    overflow : auto ; 
-    /* padding: 20px 0; 
-    line-height: 24px;
-    letter-spacing: .5px;
+.scrollbar .simplebar-track {
+    opacity: 0;
 } 
-
-
-.scrollbar.visible:hover .simplebar-vertical {
-    top: 40px;
-    bottom: 40px;
-    width: 2px;
-    margin-right: 19px;
-    opacity: 1;
-} */
 
 .simplebar-track {
     bottom: 40px;
@@ -323,6 +302,7 @@
 
 .simplebar-scrollbar {
     width: 2px;
+    height: 20px;
     background-color: var(--lilac);
 }
 
@@ -346,6 +326,8 @@
 .header-avtor {
     height: 40px;
     width: 220px;
+    padding-left: 20px;
+    text-align: left;
     border: 2px solid transparent;
     transition: border .3s ease;
 }

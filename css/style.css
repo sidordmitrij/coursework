@@ -254,6 +254,12 @@ img {
   border-radius: 29px;
 }
 
+.tab-btn,
+.tab-social {
+  border: 2px solid transparent;
+  transition: border-color .3s linear;
+}
+
 .tab-btn:active,
 .tab-social:active {
   border: 2px solid var(--lilac);

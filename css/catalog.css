@@ -25,7 +25,7 @@
     background-color: transparent;
     border: 2px solid var(--dark-lilac);
     border-radius: 50px;
-    transform: translate(-16px, -11px);
+    transform: translate(-18px, -13px);
 }
 
 .catalog__tab-btn.tab-active::after {
@@ -41,7 +41,6 @@
     width: 46px;
     height: 46px;
     margin: 6px auto;
-    /* background-size: cover; */
 }
 
 .tab-btn-franse {
