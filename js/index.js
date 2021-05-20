@@ -73,7 +73,7 @@ button.forEach(el => {
 });
 
 document.addEventListener('click', (e) => {
-  console.log(e.target)
+  //console.log(e.target)
   if (!e.target.classList.contains('scrollbar') && !e.target.classList.contains('btn-active')) {
     drop.forEach(el => {el.classList.remove('visible')})
   }
@@ -413,7 +413,7 @@ $( function() {
 		},
 	});
 	
-	document.querySelector('fedback-btn').addEventListener('click', function(el) {
+	document.querySelector('.fedback-btn').addEventListener('click', function(el) {
 		const elementClasses = document.querySelectorAll('.fedback-form-element');
 		elementClasses.forEach(el => {
 			el.classList.add('is-active');
@@ -423,35 +423,28 @@ $( function() {
 
 //SCROLL PAGE
 
-// $(document).ready(function(){
-// 	$('[href^="#"]').on('click', function(event){
-// 		 if ($(this).attr('hash') !== "") {
-// 		 event.preventDefault();
-// 		 let hash = $(this).prop('hash');
-// 		 $('html, body').animate({
-// 		   scrollTop: $(hash).offset().top
-// 		 }, 800, function(){
-// 		 });
-// 	   }
-// 	 });
-// 	});
+// var $page = $('html, body');
+// $('a[href*="#"]').click(function() {
+//     $page.animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 1000);
+//     return false;
+// });
 
+// const anchors = document.querySelectorAll('a[href*="#"]')
 
-// $(document).ready(function(){
-// 	$("a[href*=#]").on("click", function(e){
-// 	  var anchor = $(this);
-// 	  $('html, body').stop().animate({
-// 		scrollTop: $(anchor.attr('href')).offset().top
-// 	  }, 777);
-// 	  e.preventDefault();
-// 	  return false;
-// 	});
-//   });
-
-
-
-
-
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
+    
+//     const blockID = anchor.getAttribute('href').substr(1)
+    
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     })
+//   })
+// }
 
 
 

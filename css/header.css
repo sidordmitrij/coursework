@@ -262,6 +262,10 @@
     border-bottom: transparent;
 }
 
+.scrollbar-container {
+    overflow: hidden;
+}
+
 .scrollbar {
     display: block;
     position: absolute;
@@ -328,6 +332,7 @@
     width: 220px;
     padding-left: 20px;
     text-align: left;
+    font-size: 14px;
     border: 2px solid transparent;
     transition: border .3s ease;
 }

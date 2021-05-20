@@ -1,6 +1,6 @@
 /*HERO*/
 .hero__container {
-    margin-bottom: 100px;
+    margin-bottom: 220px;
     color: var(--white);
     background-color: transparent;
 }
@@ -28,7 +28,7 @@
     display: inline-block;
     width: 314px;
     height: 70px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
     padding-top: 17px;
     color: var(--white);
     font-size: 18px;
