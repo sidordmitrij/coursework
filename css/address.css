@@ -37,7 +37,7 @@
 }
 
 .form-fedback-labele {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     font-size: 24px;
 }
 
@@ -50,7 +50,7 @@
 .fedback-form-element:not(:last-child) {
     height: 40px;
     max-width: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     padding-left: 25px;
     border: 1px solid var(--dark-grey);
     border-radius: 100px;
@@ -85,7 +85,7 @@
 }
 
 .contact-one-click {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
     letter-spacing: -1px;
 }
 

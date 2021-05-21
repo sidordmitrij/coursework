@@ -63,20 +63,26 @@ else if (document.documentElement.clientWidth <= 768) {
 
 //SELECT-HEADER-BOTTOM
 const button = document.querySelectorAll('.btn-active');
-const drop = document.querySelectorAll('.scrollbar')
+const drop = document.querySelectorAll('.scrollbar');
+const btnAfter = document.querySelectorAll('.header__nav-bottom-btn');
 
 button.forEach(el => {
   el.addEventListener('click', (e) => {
     drop.forEach(el => {el.classList.remove('visible')})
-    e.currentTarget.closest('li').querySelector('.scrollbar').classList.toggle('visible');
+	e.currentTarget.closest('.header__bottom-nav-item').querySelector('.scrollbar').classList.toggle('visible');
+	
+	btnAfter.forEach(el => {el.classList.remove('reverse')})
+	e.currentTarget.closest('.header__bottom-nav-item').querySelector('.header__nav-bottom-btn').classList.toggle('reverse');
   });
 });
 
 document.addEventListener('click', (e) => {
   //console.log(e.target)
   if (!e.target.classList.contains('scrollbar') && !e.target.classList.contains('btn-active')) {
-    drop.forEach(el => {el.classList.remove('visible')})
+	drop.forEach(el => {el.classList.remove('visible')})
+	btnAfter.forEach(el => {el.classList.remove('reverse')})
   }
+
 });
 
 

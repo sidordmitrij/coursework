@@ -3,7 +3,7 @@
     margin-bottom: 137px;
 }
 .events__header {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 .events__cards {
@@ -17,7 +17,7 @@
     flex-direction: column;
     width: calc(100% / 3 - 38px);
     min-height: 700px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     border: 2px solid var(--grey);
 }
 
@@ -55,13 +55,35 @@
 }
 
 .events__link {
-    display: block;
+    display: inline-block;
     width: 100px;
     height: 30px;
     color: var(--lilac);
     border-bottom: 1px solid var(--lilac);
     margin-bottom: 40px;
+    transition: color .3s linear, border-color .3s linear;
 }
+
+.events__link::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    margin-top: -1px;
+    background-color: var(--dark-lilac);
+    transition: width .3s linear;
+}
+
+.events__link:hover {
+    color: var(--dark-lilac);
+    border-bottom: 1px solid transparent;
+}
+
+.events__link:hover::after {
+    width: 100%;
+}
+
+
 
 .events__btn {
     position: absolute;
@@ -70,7 +92,6 @@
     height: 60px;
     margin: 0 auto;
     color: var(--lilac);
-    background-color: var(--white);
 }
 
 .swiper-pagination-bullet {

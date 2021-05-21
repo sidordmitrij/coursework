@@ -175,10 +175,10 @@
 .accordion__period-time:last-child {
     border-bottom: 1px solid var(--grey);
 }
-/* 
+
 .accordion__period-time:last-child:hover {
     border-bottom: 1px solid var(--lilac);
-} */
+}
 
 .accordion__period-time:hover {
     border-top: 1px solid var(--lilac);
@@ -192,6 +192,10 @@
 .ui-state-default,
 .ui-widget-content {
     border: none;
+}
+
+.ui-widget button {
+    font-family: OpenSans;
 }
 
 .ui-icon {
@@ -238,7 +242,7 @@
     line-height: 10px;
     background-color: transparent;
     border-bottom: transparent;
-    transition: border .3s linear;
+    transition: border-color .3s linear, color .3s linear;
 }
 
 @media (max-width: 1300px) {
