@@ -15,6 +15,8 @@
 
 .catalog__header {
     margin-right: 41px;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .catalog__tab-btn::after {
@@ -97,6 +99,11 @@
 
 .catalog__card-picture {
     margin-bottom: 24px;
+}
+
+.biography-name {
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .biography {

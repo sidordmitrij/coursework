@@ -6,6 +6,8 @@
 
 .project__header {
     margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .project__text {
@@ -72,6 +74,8 @@
 
    .project__swiper-header {
        margin-bottom: 30px;
+       font-weight: 700;
+       font-size: 24px;
    }
 /* 
    .project__swiper .swiper-wrapper {

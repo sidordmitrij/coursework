@@ -4,6 +4,8 @@
 }
 .events__header {
     margin-bottom: 32px;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .events__cards {
@@ -47,6 +49,8 @@
 
 .events__card-header {
     margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .events__text {
