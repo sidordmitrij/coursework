@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'OpenSans';
     src:
-      /* local(OpenSans-Regular), */
-      url(../fonts/opensans.woff2) format('woff2'),
-      url(../fonts/opensans.woff) format('woff');
+      local(OpenSans-Regular),
+      url('../fonts/opensans.woff2') format('woff2'),
+      url('../fonts/opensans.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -12,9 +12,9 @@
 @font-face {
     font-family: 'OpenSans';
     src:
-      /* local(OpenSans-SemiBold), */
-      url(../fonts/opensanssemibold.woff2) format('woff2'),
-      url(../fonts/opensanssemibold.woff) format('woff');
+      local(OpenSans-SemiBold),
+      url('../fonts/opensanssemibold.woff2') format('woff2'),
+      url('../fonts/opensanssemibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -23,9 +23,9 @@
 @font-face {
     font-family: 'OpenSans';
     src:
-      /* local(OpenSans-Bold), */
-      url(../fonts/opensansbold.woff2) format('woff2'),
-      url(../fonts/opensansbold.woff) format('woff');
+      local(OpenSans-Bold),
+      url('../fonts/opensansbold.woff2') format('woff2'),
+      url('../fonts/opensansbold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -34,9 +34,9 @@
 @font-face {
     font-family: 'OpenSans';
     src:
-      /* local(OpenSans-ExtraBold), */
-      url(../fonts/opensansextrabold.woff2) format('woff2'),
-      url(../fonts/opensansextrabold.woff) format('woff');
+      local(OpenSans-ExtraBold),
+      url('../fonts/opensansextrabold.woff2') format('woff2'),
+      url('../fonts/opensansextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;

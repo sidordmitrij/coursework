@@ -45,7 +45,7 @@
     margin: 6px auto;
 }
 
-.tab-btn-franse {
+.tab-btn-france {
     background: url(../img/franse.png) center center no-repeat;
     background-size: cover;
 }
@@ -75,9 +75,19 @@
     margin-bottom: 35px;
 }
 
-.catalog__content {
+/* .catalog__content {
     display: flex;
     justify-content: space-between;
+} */
+
+.catalog__country {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.catalog__country.tab-active {
+    display: flex;
 }
 
 .catalog__card {
@@ -116,15 +126,6 @@
     margin: 0;
 }
 
-.accordion__period-list
-/* .ui-accordion-content-active */
- {
-    max-height: 340px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 .ui-accordion .ui-accordion-header {
     position: relative;
     margin: 0;
@@ -132,6 +133,7 @@
     text-align: left;
     font-family: OpenSans;
     font-size: 1.5em;
+    font-weight: 600;
     color: var(--dark-grey);
     background-color: var(--white);
     /* border-top: 1px solid var(--grey); */
@@ -161,14 +163,6 @@
     padding-left: 0;
 }
 
-.accordion__period-link:hover {
-    border-bottom: 1px solid var(--lilac);
-}
-
-.accordion__period-link.tab-active {
-    color: var(--lilac);
-}
-
 /* .ui-accordion .ui-accordion-content:nth-of-type(3n)  
 .accordion__period-item:nth-of-type(3n) {
     margin-right: 0;
@@ -194,6 +188,44 @@
 
 .accordion__period-time:not(:last-child):hover + .accordion__period-time {
     border-top-color: var(--lilac);
+}
+
+.accordion__period-list
+/* .ui-accordion-content-active */
+ {
+    max-height: 340px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.accordion__period-item {
+    display: none;
+    height: 32px;
+    margin-right: 30px;
+    padding-left: 2px;
+}
+
+.accordion__period-item.tab-active {
+    display: block;
+}
+
+.accordion__period-link {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color .3s linear, color .3s linear;
+}
+
+.accordion__period-link:hover {
+    border-bottom-color: var(--lilac);
+}
+
+.accordion__period-link.tab-active,
+.first-btn.tab-active {
+    color: var(--lilac);
 }
 
 .ui-state-default,
@@ -230,26 +262,6 @@
 
 .ui-widget {
     font-family: OpenSans;
-}
-
-.accordion__period-item {
-    display: none;
-    height: 32px;
-    margin-right: 30px;
-    padding-left: 2px;
-}
-
-.accordion__period-item.tab-active {
-    display: block;
-}
-
-.accordion__period-link {
-    padding: 5px 0;
-    font-size: 16px;
-    line-height: 10px;
-    background-color: transparent;
-    border-bottom: transparent;
-    transition: border-color .3s linear, color .3s linear;
 }
 
 @media (max-width: 1300px) {
@@ -298,7 +310,7 @@
     .catalog__text {
         margin-bottom: 20px;
     }
-    .catalog__content {
+    .catalog__country {
         flex-direction: column-reverse;        
     }
     .catalog__card,

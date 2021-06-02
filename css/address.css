@@ -124,17 +124,6 @@
      filter: grayscale(1);
  }
 
- /* .ymaps-2-1-78-zoom__scale,
- .ymaps-2-1-78-map-copyrights-promo,
- .ymaps-2-1-78-copyright,
- .ymaps-2-1-78-searchbox,
- .ymaps-2-1-78-traffic,
- .ymaps-2-1-78-listbox__button,
- .ymaps-2-1-78-float-button,
- .ymaps-2-1-78-scaleline {
-     display: none;
- } */
-
  .ymaps-2-1-78-zoom {
      height: 0 !important;
  }

@@ -213,7 +213,7 @@
 .publication-card-btn {
     width: 105px;
     color: var(--white);
-    font-style: 1em;
+    font-size: 1em;
     background-color: transparent;
 }
 

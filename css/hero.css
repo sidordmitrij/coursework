@@ -27,9 +27,9 @@
 .hero__content-btn {
     display: inline-block;
     width: 314px;
-    height: 70px;
+    /* height: 70px; */
     /* margin-bottom: 120px; */
-    padding-top: 17px;
+    padding: 17px 5px;
     color: var(--white);
     font-size: 18px;
     font-weight: 700;
@@ -94,9 +94,9 @@
 }
 
 @media (max-width: 1024px) {
-    .hero__container {
+    /* .hero__container {
         margin-bottom: 90px;
-    }
+    } */
     .hero__content {
         max-width: 100%;
         padding-top: 115px;

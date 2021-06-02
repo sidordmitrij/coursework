@@ -144,6 +144,7 @@ img {
   border: 2px solid transparent;
   border-radius: 50px;
   background-color: #666;
+  transition: background-color .3s linear;
 }
 
 .block-prev {
@@ -153,7 +154,6 @@ img {
 .block-prev:hover,
 .block-next:hover {
   background-color: var(--lilac);
-  transition: background-color .3s linear;
 }
 
 .block-prev:active,

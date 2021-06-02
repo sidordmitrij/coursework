@@ -238,21 +238,17 @@
 }
 
 .header__nav-bottom-btn::after {
+    content: '';
     position: absolute;
-    content: "";
-    display: block;
-    margin-right: 4px;
-    margin-top: -6.5px;
-    top: 50%;
-    right: 0;
-    border-bottom: 1px solid var(--white);
-    border-left: 1px solid var(--white);
-    border-right: transparent;
-    border-top: transparent;
-    width: 9px;
-    height: 9px;
-    transform: rotate(-45deg);
-    transition: border-color .3s ease;
+    width: 7.07px;
+    height: 7.07px;
+    right: 8px;
+    top: 40%;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    transition: border-color .3s linear, transform 150ms linear;
 }
 
 .header__bottom-nav-item:hover .header__nav-bottom-btn::after,
@@ -261,11 +257,8 @@
 }
 
 .header__nav-bottom-btn.reverse.header__nav-bottom-btn::after {
-    top: 22px;
-    border-top: 1px solid var(--white);
-    border-right: 1px solid var(--white);
-    border-left: transparent;
-    border-bottom: transparent;
+    transform: scaleY(-1) rotate(45deg);
+
 }
 
 /* .scrollbar-container {

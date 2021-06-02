@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-//HEADER-BTN
+//HEADER:
 //BURGER-MENU
 document.querySelector('.header__burger-menu').addEventListener('click', function() {
     // обращаемся к документу и запускаем обработчик события 'клик' и запускаем функцию
@@ -257,95 +257,80 @@ var projectsSwiper = new Swiper('.project__swiper', {
 });	
 
 
+//ACCORDION
+ $( function() {
+   $( ".catalog__accordion" ).accordion({
+	 collapsible: true,
+	 heightStyle: "content",
+   });
+ });
 
-//TAB COLOR
-const border = document.querySelectorAll('.catalog__tab-btn');
-const periodLink  = document.querySelectorAll('.accordion__period-link');
+//TAB BORDER and COUNTRY
+ let countryBtns =  document.querySelectorAll('.catalog__tab-btn');
 
-border.forEach(tabBtn => {
-	tabBtn.addEventListener('click', (color) => {
-		border.forEach(tabBtn => {tabBtn.classList.remove('tab-active')});
-		periodLink.forEach(tabBtn => {tabBtn.classList.remove('tab-active')});
+ countryBtns.forEach(function(tabsBtn) {  
+   tabsBtn.addEventListener('click', function(event) {
+	 countryBtns.forEach(function(border){ 
+	   border.classList.remove('tab-active'); 
+	 });
+	 this.classList.add('tab-active'); 
 
-		color.currentTarget.closest('li').querySelector('.catalog__tab-btn').classList.toggle('tab-active');
-		color.currentTarget.closest('li').querySelector('.accordion__period-link').classList.toggle('tab-active');
-	
-	});
-});
+	 const path = event.currentTarget.dataset.path;
+	 document.querySelectorAll('.catalog__country').forEach(function(catalogTabs){
+	   catalogTabs.classList.remove('tab-active');
+	 });
+	 document.querySelector(`[data-target="${path}"]`).classList.add('tab-active');
+	 
+	 document.querySelectorAll('.catalog__card').forEach(function(biography){ 
+	   biography.classList.remove('tab-active');
+	 });
+	 document.querySelector(`[data-target="${path}"]`).classList.add('tab-active');
 
-periodLink.forEach(tabBtn => {
-	tabBtn.addEventListener('click', (color) => {
-		periodLink.forEach(tabBtn => {tabBtn.classList.remove('tab-active')});
+	 let elem = document.querySelector('.catalog__country.tab-active');
+	 elem.firstElementChild.classList.add('tab-active'); 
 
-			color.currentTarget.closest('li').querySelector('.accordion__period-link').classList.toggle('tab-active');
-	
-	});
-});
+	 let artBtns = document.querySelectorAll('.accordion__period-link').forEach(function(artBtn) { 
+	   artBtn.classList.remove('tab-active'); 
+	 })
+	 let defaultButton = elem.querySelector('.first-btn');
+	 defaultButton.classList.add('tab-active'); 
+	 // console.log(defaultButton);
 
-// //TAB COUNTRY
-document.querySelectorAll('.catalog__tab-btn').forEach(function(catalogTabBtn) {
-	catalogTabBtn.addEventListener('click', function(event){
-				
-	  const path = event.currentTarget.dataset.path
-	  document.querySelectorAll('.accordion__period-item').forEach(function(periodItem){
-		periodItem.classList.remove('tab-active')
-	  })
-
-	document.querySelectorAll(`[data-target="${path}"]`).forEach(function(periodItem){
-	  periodItem.classList.add('tab-active')
-	  
-	})
-  })
-})
-  
-//TAB AVTOR
-document.querySelectorAll('.accordion__period-link').forEach(function(periodLink) {
-	periodLink.addEventListener('click', function(event){
-		
-	  const path = event.currentTarget.dataset.path
-	  document.querySelectorAll('.catalog__card').forEach(function(periodLink){
-		periodLink.classList.remove('tab-active')
-	  })
-	  document.querySelector(`[data-target="${path}"]`).classList.add('tab-active')
-	  
-	})
-  })  
-
-
-
-//Accordion
-$( function() {
-
-	var icons = {
-	  header: "ui-icon-circle-arrow-e",
-	  activeHeader: "ui-icon-circle-arrow-s"
-	};
-  
-	$( "#accordion" ).accordion({
-	  active: 0, //при открытии страницы первая вкладка развернута
-	  collapsible: true, //разрешает разворачивать вкладки
-	  heightStyle: "content", //высота по содержимому
-	  icons: icons
-	});
-  
-	$( "#toggle" ).button().on( "click", function() {
-	  if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-		$( "#accordion" ).accordion( "option", "icons", null );
-	  } else {
-		$( "#accordion" ).accordion( "option", "icons", icons );
-	  }
-	});
-  
-  });
-	// Getter
-	var collapsible = $( ".selector" ).accordion( "option", "collapsible" );
-  
-	// Setter
-	$( ".selector" ).accordion( "option", "collapsible", true );
-	$( ".selector" ).accordion({
-	  collapsible: true
-	});
+	 $('.catalog__accordion').accordion( "refresh" ); // обновление, перезапуск плагина для пересчета аккордеона
+   });
+ });
  
+ //TAB AVTOR
+ let artBtns = document.querySelectorAll('.accordion__period-link');
+   
+   artBtns.forEach(function(tabsBtn) { 
+	 tabsBtn.addEventListener('click', function(event) { 
+	   artBtns.forEach(function(border){ 
+	   border.classList.remove('tab-active'); 
+	 });
+	 this.classList.add('tab-active'); 
+	 
+	 const path = event.currentTarget.dataset.path;
+	 document.querySelectorAll('.catalog__card').forEach(function(catalogTabs){
+	   catalogTabs.classList.remove('tab-active');
+	 });
+	 document.querySelector(`[data-target="${path}"]`).classList.add('tab-active');
+   });
+ });
+ 
+ //SCROLL <980px
+ if (document.documentElement.clientWidth <= 980) {
+   artBtns.forEach(function(tabs) {
+	 tabs.addEventListener('click', ()=>{
+	   let activeCatalog = document.querySelector('.catalog__card.tab-active');
+	   activeCatalog.scrollIntoView({
+		 block: "start",
+		 behavior: "smooth"
+	   });
+	 });
+   });
+ };
+
 	
 	//MAPS
     // Функция ymaps.ready() будет вызвана, когда
@@ -429,28 +414,21 @@ $( function() {
 
 //SCROLL PAGE
 
-// var $page = $('html, body');
-// $('a[href*="#"]').click(function() {
-//     $page.animate({
-//         scrollTop: $($.attr(this, 'href')).offset().top
-//     }, 1000);
-//     return false;
-// });
+$(document).ready(function() {
+	var margin = 0; // переменная для контроля докрутки
+	$(".hero__content-btn").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+	   $("html, body").animate({
+		  scrollTop: $($(this).attr("href")).offset().top+margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+	   }, {
+		  duration: 2000,
+		  easing: "swing"
+	   });
+	   return false;
+	});
+  });
 
-// const anchors = document.querySelectorAll('a[href*="#"]')
 
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
-    
-//     const blockID = anchor.getAttribute('href').substr(1)
-    
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start'
-//     })
-//   })
-// }
+
 
 
 
