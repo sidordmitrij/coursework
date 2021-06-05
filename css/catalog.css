@@ -122,14 +122,14 @@
 
 .period-heading {
     width: 100%;
-    height: 114px;
+    /* height: 114px; */
     margin: 0;
 }
 
 .ui-accordion .ui-accordion-header {
     position: relative;
     margin: 0;
-    padding-left: 0;
+    padding: 41px 0;
     text-align: left;
     font-family: OpenSans;
     font-size: 1.5em;
@@ -296,16 +296,16 @@
         margin-bottom: 87px;
     }
     .catalog__header {
-        margin-right: 33px;
+        margin-right: 45px;
     }
     .catalog__nav {
         transform: translateY(-13px);
     }
+    .catalog__tab-btn {
+        width: 50px;
+    }
     .catalog__accordion {
         margin-bottom: 50px;
-    }
-    .catalog__item:not(:last-child) {
-        margin-right: 54px;
     }
     .catalog__text {
         margin-bottom: 20px;
@@ -317,8 +317,17 @@
     .catalog__accordion {
         width: 100%;
     }
+    .ui-accordion .ui-accordion-header {
+        padding: 40.5px 0;
+    }
     .ui-accordion-content-active {
         height: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog__header{
+        font-size: max(6vw, 28px);
     }
 }
 
@@ -333,17 +342,17 @@
         margin-bottom: 20px;
     }
     .catalog__tab-btn {
-        width: 32px;
+        width: 36px;
         height: 32px;
         border-radius: 50px;
     }
     .catalog__item:not(:last-child) {
-        margin-right: 32px;
+        margin-right: 28px;
     }
     .catalog__tab-btn::after {
-        width: 50px;
-        height: 50px;
-        transform: translate(-15px, -10px);
+        width: 44px;
+        height: 44px;
+        transform: translate(-13px, -9px);
     }
     .catalog__text {
         display: none;
@@ -353,14 +362,12 @@
         padding: 25px 0 16px;
     }
     .ui-accordion .ui-accordion-header {
+        padding: 25px 0;
         font-size: 1.18em;
     }
     .ui-accordion-content-active {
         height: 438px;
     }    
-    .period-heading {
-        height: 73px;
-    } 
     .ui-icon {
         width: 35px;
         height: 35px;
@@ -396,7 +403,7 @@
         font-size: 1.1em;
     }
     .ui-accordion .ui-accordion-content {
-        padding: 25px 0 11px;
+        padding: 23px 0 11px;
     } 
 }
   

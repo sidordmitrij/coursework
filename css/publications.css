@@ -261,11 +261,17 @@
         margin-bottom: 0px;
     }
     .check-input-price {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .publication__wrapper {
         width: 615px;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .publications__header{
+        font-size: max(6vw, 28px);
     }
 }
 
