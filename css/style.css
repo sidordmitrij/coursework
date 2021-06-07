@@ -50,16 +50,6 @@ p {
   margin: 0;
 }
 
-/* h2 {
-  font-size: 48px;
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 24px;
-}*/
-
 a {
   text-decoration: none;
   color: inherit;
@@ -80,6 +70,14 @@ img {
   max-width: 100%;
   /*изображениям задаем максимальный размер своего родителя*/
   height: auto;
+}
+
+/*
+  Отменяет фокус при клике мышью,
+но оставляет фокус с клавиатуры.
+*/
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
 }
 
 .visually-hidden {

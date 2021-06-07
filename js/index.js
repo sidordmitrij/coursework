@@ -97,7 +97,7 @@ selects.forEach((sel) => {
 });
 
 //Hero-Swiper
-    var heroSwiper = new Swiper('.hero__swiper', {
+    var heroSwiper = new Swiper('.hero__slider', {
         slidesPerView: 1,
 	    spaceBetween: 10,
 
@@ -110,7 +110,7 @@ selects.forEach((sel) => {
 	
 
 //Gallery-Swiper	
-	var gallerySwiper = new Swiper('.gallery__swiper', {
+	var gallerySwiper = new Swiper('.gallery__slider', {
 
 		slidesPerView: 1,
 		// slidesPerColumn: 1,
@@ -154,7 +154,7 @@ selects.forEach((sel) => {
 	//EVENTS
 	//EVENTS-SWIPER
 	if (document.documentElement.clientWidth < 768) {
-		var eventSwiper = new Swiper('.events__swiper', {
+		var eventSwiper = new Swiper('.events__slider', {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			slidesPerGroup: 1,
@@ -197,7 +197,7 @@ selects.forEach((sel) => {
 
 	//PUBLICATIONS-SWIPER
 	if (document.documentElement.clientWidth > 767) {
-	var publicationSwiper = new Swiper('.publications__swiper', {
+	var publicationSwiper = new Swiper('.publications__slider', {
 
 		slidesPerView: 2,
 		spaceBetween: 34,
@@ -231,7 +231,7 @@ selects.forEach((sel) => {
 	}
 
 //PROJECTS-SWIPER
-var projectsSwiper = new Swiper('.project__swiper', {
+var projectsSwiper = new Swiper('.project__slider', {
 
 	slidesPerView: 1,
 	slidesPerGroup: 1,

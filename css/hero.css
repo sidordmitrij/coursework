@@ -18,7 +18,7 @@
 }
 
 .hero__content-text {
-    margin-bottom: 93px;
+    margin-bottom: 92px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -27,8 +27,6 @@
 .hero__content-btn {
     display: inline-block;
     width: 314px;
-    /* height: 70px; */
-    /* margin-bottom: 120px; */
     padding: 17px 5px;
     color: var(--white);
     font-size: 18px;
@@ -53,7 +51,7 @@
     border: 3px solid #D1A9F0
 }
 
-.hero__swiper {
+.hero__slider {
     position: absolute;
     top: 0;
     left: 0;

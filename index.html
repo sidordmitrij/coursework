@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="css/address.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
+    <script src="js/focus-visible.js" defer></script>
     <script src="js/choices.min.js"></script>
     <script src="js/swiper-bindle.min.js" defer></script>
     <script src="js/simplebar.min.js" defer></script>
@@ -260,7 +261,7 @@
                         <a href="#address" class="hero__content-btn">Подписаться на рассылку</a>
                     </div>  
                 </div>  
-                <div class="swiper-container hero__swiper">
+                <div class="swiper-container hero__slider">
                 
                     <div class="swiper-wrapper hero-wrapper">
                         <!-- Slides (слайды) -->
@@ -305,7 +306,7 @@
 
                 <!-- <div class="gallery__swiper-content"> -->
                     
-                <div class="swiper-container gallery__swiper">
+                <div class="swiper-container gallery__slider">
                     <div class="swiper-block-btn">
                         <div class="swiper-button-prev gallery-prev block-prev" aria-label="предыдущее изображение"></div>
                         <div class="swiper-pagination gallery-pagination block-pagination"></div>
@@ -1402,67 +1403,77 @@
         <section id="events" class="events">
             <div class="container events__container">
                 <h2 class="events__header">События</h2>
-                <div class="swiper-container events__swiper">
+                <div class="swiper-container events__slider">
                     <div class="swiper-wrapper events__cards">
                         <div class="swiper-slide event-card">
                             <img class="events__card-picture" src="img/Rectangle101.jpg" alt="узор">
-                            <small class="events__small">Музей им. Щусева</small>
-                            <small class="events__small">с 20 марта по 30 апреля</small>
-                            <h3 class="events__card-header">
-                                Книжная гравюра в живом восприятии
-                            </h3>
-                            <p class="events__text">
-                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-                            </p>
-                            <a href="#" class="events__link">Подробнее</a>
+                            <div class="events__card-content">
+                                <small class="events__small">Музей им. Щусева</small>
+                                <small class="events__small">с 20 марта по 30 апреля</small>
+                                <h3 class="events__card-header">
+                                    Книжная гравюра в живом восприятии
+                                </h3>
+                                <p class="events__text">
+                                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+                                </p>
+                                <a href="#" class="events__link">Подробнее</a>
+                            </div>    
                         </div>
                         <div class="swiper-slide event-card">
                             <img class="events__card-picture" src="img/Rectangle101(1).jpg" alt="витраж">
-                            <small class="events__small">ММОМА</small>
-                            <small class="events__small">24 марта 19:00</small>
-                            <h3 class="events__card-header">
-                                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин. 
-                            </h3>
-                            <p class="events__text">
-                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
-                            </p>
-                            <a href="#" class="events__link">Подробнее</a>
+                            <div class="events__card-content">
+                                <small class="events__small">ММОМА</small>
+                                <small class="events__small">24 марта 19:00</small>
+                                <h3 class="events__card-header">
+                                    «Открытая дискуссия». Дмитрий Петров и Сергей Ильин. 
+                                </h3>
+                                <p class="events__text">
+                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+                                </p>
+                                <a href="#" class="events__link">Подробнее</a>
+                            </div>
                         </div>
                         <div class="swiper-slide event-card">
                             <img class="events__card-picture" src="img/Rectangle101(2).jpg" alt="выставочный зал">
-                            <small class="events__small">Еврейский музей</small>
-                            <small class="events__small">с 31 марта по 21 апреля</small>
-                            <h3 class="events__card-header">
-                                Выставка «Формация 2020»
-                            </h3>
-                            <p class="events__text">
-                                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
-                            </p>
-                            <a href="#" class="events__link">Подробнее</a>
+                            <div class="events__card-content">
+                                <small class="events__small">Еврейский музей</small>
+                                <small class="events__small">с 31 марта по 21 апреля</small>
+                                <h3 class="events__card-header">
+                                    Выставка «Формация 2020»
+                                </h3>
+                                <p class="events__text">
+                                    Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
+                                </p>
+                                <a href="#" class="events__link">Подробнее</a>
+                            </div>
                         </div>
                         <div class="swiper-slide event-card card-invisible">
                             <img class="events__card-picture" src="img/Rectangle101(3).jpg" alt="разноцветные сосульки">
-                            <small class="events__small">Третьяковка на Крымском валу</small>
-                            <small class="events__small">с 30 марта по 30 апреля</small>
-                            <h3 class="events__card-header">
-                                XXIV Международная биеннале молодого искусства
-                            </h3>
-                            <p class="events__text">
-                                Внезапно, реплицированные с зарубежных источников, современные исследования.
-                            </p>
-                            <a href="#" class="events__link">Подробнее</a>
+                            <div class="events__card-content">
+                                <small class="events__small">Третьяковка на Крымском валу</small>
+                                <small class="events__small">с 30 марта по 30 апреля</small>
+                                <h3 class="events__card-header">
+                                    XXIV Международная биеннале молодого искусства
+                                </h3>
+                                <p class="events__text">
+                                    Внезапно, реплицированные с зарубежных источников, современные исследования.
+                                </p>
+                                <a href="#" class="events__link">Подробнее</a>
+                            </div>
                         </div>
                         <div class="swiper-slide event-card card-invisible">
                             <img class="events__card-picture" src="img/Rectangle101(4).jpg" alt="абстрактное фото">
-                            <small class="events__small">ММАМ</small>
-                            <small class="events__small">с 8 апреля по 20 мая</small>
-                            <h3 class="events__card-header">
-                                Джон Винзор. Фотографии из серии «Метафора серебра»
-                            </h3>
-                            <p class="events__text">
-                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-                            </p>
-                            <a href="#" class="events__link">Подробнее</a>
+                            <div class="events__card-content">
+                                <small class="events__small">ММАМ</small>
+                                <small class="events__small">с 8 апреля по 20 мая</small>
+                                <h3 class="events__card-header">
+                                    Джон Винзор. Фотографии из серии «Метафора серебра»
+                                </h3>
+                                <p class="events__text">
+                                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+                                </p>
+                                <a href="#" class="events__link">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination events__pagination"></div>
@@ -1586,7 +1597,7 @@
                     </form>
  
                 </div>
-                <div class="swiper-container publications__swiper">   
+                <div class="swiper-container publications__slider">   
                     <div class="swiper-block-btn publications-block-btn">
                         <div class="swiper-button-prev publication-prev block-prev" aria-label="предыдущее изображение"></div>
                         <div class="swiper-pagination publication-pagination block-pagination"></div>
@@ -1716,12 +1727,12 @@
                     предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
                         <a class="project-link link">blanchard-art.ru/projects/about</a>
                 </div>
-                <h3 class="project__swiper-header">Партнеры проектов:</h3>
+                <h3 class="project__slider-header">Партнеры проектов:</h3>
                 <div class="swiper-block-btn progect-block-btn">
                     <div class="swiper-button-prev project-prev block-prev" aria-label="предыдущее изображение"></div>
                     <div class="swiper-button-next project-next block-next" aria-label="следующее изображение"></div>
                 </div> 
-                <div class="swiper-container project__swiper">
+                <div class="swiper-container project__slider">
                     <div class="swiper-wrapper project__wrapper">
                         <div class="swiper-slide project-slide">
                             <img src="img/project1.png" alt="логотип компании" class="project-picture">
