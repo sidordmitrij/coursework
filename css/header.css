@@ -454,6 +454,9 @@
 }
 
 @media (max-width: 1024px) {
+    .header__top {
+        padding: 32px 0;
+    }
     .header__logo {
         position: absolute;
         /* top: 30px; */

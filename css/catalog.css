@@ -1,11 +1,11 @@
 /*CATALOG*/
 .catalog__container {
-    margin-bottom: 100px;
+    margin-bottom: 95px;
 }
 
 .catalog__tab {
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .catalog__nav {
@@ -14,7 +14,7 @@
 }
 
 .catalog__header {
-    margin-right: 41px;
+    margin-right: 39px;
     font-size: 48px;
     font-weight: 400;
 }
@@ -27,7 +27,7 @@
     background-color: transparent;
     border: 2px solid var(--dark-lilac);
     border-radius: 50px;
-    transform: translate(-18px, -13px);
+    transform: translate(-16px, -12px);
 }
 
 .catalog__tab-btn.tab-active::after {
@@ -35,13 +35,13 @@
 }
 
 .catalog__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 46px;
 }
 
 .catalog__tab-btn {
     display: block;
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 50px;
     margin: 6px auto;
 }
 
@@ -72,7 +72,7 @@
 
 .catalog__text {
     max-width: 1075px;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 }
 
 /* .catalog__content {
@@ -108,7 +108,7 @@
 } */
 
 .catalog__card-picture {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
 }
 
 .biography-name {

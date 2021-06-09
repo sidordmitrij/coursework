@@ -23,7 +23,7 @@
 .publications__check {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .publications__header {
@@ -41,7 +41,13 @@
 }
 
 .check {
-    display: none;
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+}
+
+.check:focus-visible + span {
+    color: var(--light-lilac);
 }
 
 .check-label {
@@ -51,6 +57,14 @@
     align-items: center;
     padding-left: 25px;
     cursor: pointer;
+}
+
+.check-label:focus-visible {
+    outline-color: var(--lilac);
+}
+
+.check-text {
+    transition: color .2s ease-in-out;
 }
 
 .check:checked ~ .check-text {
@@ -64,8 +78,8 @@
     width: 12px;
     height: 12px;
     border: 1px solid var(--white);
-    border-radius: 3px;
-    transition: border-color .3s ease-in-out;
+    /* border-radius: 3px; */
+    transition: border-color .2s ease-in-out;
 }
 
 .check ~ .check-span::before {
@@ -76,10 +90,10 @@
     right: -1px;
     bottom: -1px;
     border: 1px solid var(--lilac);
-    border-radius: 3px;
+    /* border-radius: 3px; */
     background: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C283F3'/%3E%3C/svg%3E%0A") center center no-repeat;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .2s ease-in-out;
 }
 
 .check:checked {
@@ -103,7 +117,7 @@
 }
 
 .check-price {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     border-radius: 6px;
 }
 
@@ -150,7 +164,12 @@
 }
 
 .publications-block-btn {
-    height: 69px;
+    height: 71px;
+}
+
+.publication-pagination {
+    margin-right: 17px;
+    padding-top: 28px;
 }
 
 .publication__wrapper {
@@ -237,8 +256,8 @@
 
 @media (max-width: 968px) {
     .publications {
-        margin-bottom: 117px;
-        padding-top: 105px;
+        margin-bottom: 110px;
+        padding-top: 98px;
         padding-bottom: 0;
         background: url(../img/pablications768.jpg) center center no-repeat;
         background-size: cover;
@@ -255,13 +274,16 @@
     }
     /* .check-label, */
     .publication-item {
-        margin-right: max(7vw, 10px);
+        margin-right: max(7.2vw, 10px);
     }
     .check-price {
-        margin-bottom: 0px;
+        margin-bottom: 5px;
     }
     .check-input-price {
         margin-bottom: 40px;
+    }
+    .publications-block-btn {
+        margin-bottom: 2px;
     }
     .publication__wrapper {
         width: 615px;
@@ -271,7 +293,7 @@
 
 @media (max-width: 768px) {
     .publications__header{
-        font-size: max(6vw, 28px);
+        font-size: max(6.2vw, 28px);
     }
 }
 

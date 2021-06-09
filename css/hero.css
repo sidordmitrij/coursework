@@ -92,9 +92,9 @@
 }
 
 @media (max-width: 1024px) {
-    /* .hero__container {
-        margin-bottom: 90px;
-    } */
+    .hero__container {
+        margin-bottom: 210px;
+    }
     .hero__content {
         max-width: 100%;
         padding-top: 115px;

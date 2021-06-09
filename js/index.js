@@ -194,6 +194,8 @@ selects.forEach((sel) => {
 			});
 	});
 
+	
+
 
 	//PUBLICATIONS-SWIPER
 	if (document.documentElement.clientWidth > 767) {

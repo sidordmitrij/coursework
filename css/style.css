@@ -23,6 +23,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus-visible {
+  outline-color: var(--lilac);
+}
+
 body {
   
   background-color: var(--white);
