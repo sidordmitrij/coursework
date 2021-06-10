@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.footer__logo {
+    height: 39px;
+}
+
 .footer__social {
     display: flex;
     justify-content: space-between;

@@ -210,6 +210,15 @@ img {
   background-color: var(--lilac);
 }
 
+.btn-border:focus {
+  color: var(--white);
+  background-color: var(--light-lilac);
+
+  /* outline: 2px solid var(--light-lilac); */
+  /* color: var(--white);
+  background-color: var(--lilac); */
+}
+
 .link {
   transition: color .3s linear;
 }

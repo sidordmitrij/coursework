@@ -22,10 +22,12 @@
 .address__contact {
     display: flex;
     flex-direction: column;
-    width: 32%;
-    margin-right: 130px;
+    width: 40%;
+    padding-right: 130px;
     padding-top: 133px;
     padding-bottom: 123px;
+    border-top: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
 }
 
 .contact-name,
@@ -35,7 +37,7 @@
 }
 
 .contact-street {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .form-fedback-labele {
@@ -58,6 +60,9 @@
     border-radius: 100px;
 }
 
+.fedback-form-element:not(:last-child):focus {
+    background-color: var(--light-grey);
+}
 
 .fedback-name + .js-validate-error-label,
 .fedback-phone + .js-validate-error-label {

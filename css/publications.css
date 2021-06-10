@@ -27,12 +27,13 @@
 }
 
 .publications__header {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     font-size: 48px;
     font-weight: 400;
 }
 
 .check-header {
+    padding: 0;
     color: var(--white);
     font-size: 16px;
     font-weight: 700;
@@ -42,11 +43,11 @@
 
 .check {
     position: absolute;
-    /* display: none; */
     opacity: 0;
 }
 
-.check:focus-visible + span {
+.check:focus-visible + .check-text,
+.check:hover + .check-text {
     color: var(--light-lilac);
 }
 
@@ -81,6 +82,12 @@
     /* border-radius: 3px; */
     transition: border-color .2s ease-in-out;
 }
+
+.check:focus-visible ~ .check-span,
+.check:hover ~ .check-span {
+    border-color: var(--light-lilac);
+}
+
 
 .check ~ .check-span::before {
     position: absolute;
@@ -117,7 +124,7 @@
 }
 
 .check-price {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     border-radius: 6px;
 }
 
@@ -130,7 +137,7 @@
 
 .check-price-from,
 .check-price-to {
-    width: 72px;
+    width: 73px;
     height: 100%;
     padding-left: 10px;
     color: var(--white);
@@ -150,9 +157,12 @@
     text-align: center;
 }
 
-.label-from,
+.label-from {
+    width: 36px;
+}
+
 .label-to {
-    width: 34px;
+    width: 31px;
 }
 
 .label-price-to {
