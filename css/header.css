@@ -1,6 +1,6 @@
 /*HEADER*/
 .header__top {
-    padding: 30px 0;
+    padding: 33px 0;
     background-color: var(--black);
 }
 
@@ -138,7 +138,7 @@
 }
 
 .header__nav-item:not(:last-child) {
-    margin-right: min(3.3vw, 70px);
+    margin-right: min(3.2vw, 70px);
 }
 
 .header__nav-link {
@@ -148,7 +148,7 @@
 }
 
 .header__enter {
-    padding: 0 0 0 5.5vw;
+    /* padding: 0 0 0 5.5vw; */
     color: var(--white);
     font-size: 18px;
     background-color: var(--black);
@@ -254,6 +254,10 @@
 .header__bottom-nav-item:hover .header__nav-bottom-btn::after,
 .header__bottom-nav-item:hover .header__nav-bottom-btn.reverse.header__nav-bottom-btn::after {
     border-color: var(--lilac);
+}
+
+.header__nav-bottom-btn:focus {
+    outline: 1px solid var(--lilac);
 }
 
 .header__nav-bottom-btn.reverse.header__nav-bottom-btn::after {
@@ -419,12 +423,20 @@
     transition: background .3s linear;
 }
 
+.header-search:focus {
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='%23C283F3'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='%23C283F3'/%3E%3C/svg%3E ");
+}
+
 .header__bottom-form-search:hover .header-search,
 .header-bottom-search-text:active + .header-search {
     background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='%23C283F3'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='%23C283F3'/%3E%3C/svg%3E ");
 }
 
 .header__bottom-form-search:hover .header-bottom-search-text {
+    border-bottom: 1px solid var(--light-lilac);
+}
+
+.header-bottom-search-text:focus {
     border-bottom: 1px solid var(--light-lilac);
 }
 

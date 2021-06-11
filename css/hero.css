@@ -12,6 +12,7 @@
 
 .hero__content-header {
     margin-bottom: 20px;
+    margin-left: -5px;
     font-size: 72px;
     font-weight: 700;
     line-height: 82.8px;
@@ -39,16 +40,17 @@
 }
 
 .hero__content-btn:focus {
-    border: 2px solid #C283F3
+    border-color: #C283F3;
+    outline: none;
 }
 
 .hero__content-btn:hover {
-    border-color: #D1A9F0
+    border-color: #D1A9F0;
 }
 
 .hero__content-btn:active {
     background-color: var(--dark-lilac);
-    border: 3px solid #D1A9F0
+    border: 3px solid #D1A9F0;
 }
 
 .hero__slider {

@@ -28,6 +28,7 @@
 
 .publications__header {
     margin-bottom: 33px;
+    margin-left: -3px;
     font-size: 48px;
     font-weight: 400;
 }
@@ -46,9 +47,16 @@
     opacity: 0;
 }
 
-.check:focus-visible + .check-text,
-.check:hover + .check-text {
+.check:focus-visible + .check-text {
     color: var(--light-lilac);
+}
+
+.check-text:hover {
+    color: var(--light-lilac)
+}
+
+.check-text:hover + .check-span {
+    border-color: var(--light-lilac);
 }
 
 .check-label {
@@ -83,8 +91,7 @@
     transition: border-color .2s ease-in-out;
 }
 
-.check:focus-visible ~ .check-span,
-.check:hover ~ .check-span {
+.check:focus-visible ~ .check-span {
     border-color: var(--light-lilac);
 }
 
@@ -175,6 +182,11 @@
 
 .publications-block-btn {
     height: 71px;
+}
+
+.publication-prev,
+.publication-next {
+    top: 54%
 }
 
 .publication-pagination {

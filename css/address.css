@@ -10,6 +10,7 @@
 
 .address__header {
     margin-bottom: 30px;
+    margin-left: -2px;
     font-size: 48px;
     font-weight: 400;
 }
@@ -24,7 +25,7 @@
     flex-direction: column;
     width: 40%;
     padding-right: 130px;
-    padding-top: 133px;
+    padding-top: 125px;
     padding-bottom: 123px;
     border-top: 1px solid var(--grey);
     border-right: 1px solid var(--grey);
@@ -37,11 +38,11 @@
 }
 
 .contact-street {
-    margin-bottom: 25px;
+    margin-bottom: 31px;
 }
 
 .form-fedback-labele {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     font-size: 24px;
 }
 

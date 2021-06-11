@@ -255,9 +255,11 @@ img {
   outline: none;
 }
 
-.tab-btn:hover {
+.tab-btn:hover,
+.tab-btn:focus {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
   border-radius: 29px;
+  outline: none;
 }
 
 .tab-btn,
@@ -272,9 +274,11 @@ img {
   filter: none;
 }
 
-.tab-social:hover {
+.tab-social:hover,
+.tab-social:focus {
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 1));
   border-radius: 29px;
+  outline: none;
 }
 
 @keyframes visible {

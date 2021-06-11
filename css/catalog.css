@@ -15,6 +15,7 @@
 
 .catalog__header {
     margin-right: 39px;
+    margin-left: -2px;
     font-size: 48px;
     font-weight: 400;
 }
@@ -114,6 +115,7 @@
 .biography-name {
     font-weight: 700;
     font-size: 24px;
+    letter-spacing: -.6px;
 }
 
 .biography {
@@ -140,7 +142,8 @@
     transition: color .3s linear, border-color .3s linear;
 }
 
-.ui-accordion-header:hover {
+.ui-accordion-header:hover,
+.ui-accordion-header:focus {
     color: var(--lilac);
     /* border-top: 1px solid var(--lilac);
     border-bottom: 1px solid var(--lilac); */
