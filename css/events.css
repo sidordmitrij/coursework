@@ -150,6 +150,7 @@
         letter-spacing: .5px;
     }
     .events__text {
+        padding: 0;
         letter-spacing: .6px;
     }
 }

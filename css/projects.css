@@ -43,6 +43,7 @@
     line-height: 16px;
     background: #999;
     opacity: 0;
+    cursor: auto;
     transition: opacity .3s ease-in-out;
    }
 
@@ -85,7 +86,8 @@
 
    .project__slider {
        display: flex;
-       padding: 0 60px;
+       width: 91%;
+       /* padding: 0 60px; */
        text-align: center;
    }
  
