@@ -43,6 +43,8 @@
     <script src="js/simplebar.min.js" defer></script>
     <script src="js/jquery-1.12.4.js" defer></script>
     <script src="js/jquery-ui.js" defer></script>
+    <script src="js/popper.js" defer></script>
+    <script src="js/tippy.js" defer></script>
     <!-- <script src="js/jquery-3.6.0.js" defer></script> -->
     <!-- <script src="js/jquery-latest.js" type="text/javascript" defer></script> -->
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script> -->
@@ -1706,60 +1708,63 @@
             <div class="container project__container">
                 <h2 class="project__header">Проекты</h2>
                 <div class="project__text">
-                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно&nbsp;-&nbsp;пропагандистское
-                    <button class="tooltip-icon" aria-describedby="tooltip1">
-                        <span class="tooltip-icon-content" role="tree" id="tooltip1">
+                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
+                    <button class="tooltip-icon" id="tooltip1">
+                        <!-- <span class="tooltip-icon-content" role="tree" id="tooltip1">
                             Пример современных тенденций - современная методология разработки
-                        </span>
+                        </span> -->
                     </button>   
                     обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-                    <button class="tooltip-icon" aria-describedby="tooltip2">
-                        <span class="tooltip-icon-content" role="tree" id="tooltip2">
+                    <button class="tooltip-icon" id="tooltip2">
+                        <!-- <span class="tooltip-icon-content" role="tree" id="tooltip2">
                             Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции
-                        </span>
+                        </span> -->
                     </button>   
                     исключительно в разрезе маркетинговых и финансовых
-                    <button class="tooltip-icon" aria-describedby="tooltip3">
-                        <span class="tooltip-icon-content" role="tree" id="tooltip3">
+                    <button class="tooltip-icon" id="tooltip3">
+                        <!-- <span class="tooltip-icon-content" role="tree" id="tooltip3">
                             В стремлении повысить качество
-                        </span>
+                        </span> -->
                     </button>    
                     предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
                         <a class="project-link link" tabindex="0">blanchard-art.ru/projects/about</a>
                 </div>
                 <h3 class="project__slider-header">Партнеры проектов:</h3>
-                <div class="swiper-block-btn progect-block-btn">
-                    <div class="swiper-button-prev project-prev block-prev" aria-label="предыдущее изображение"></div>
-                    <div class="swiper-button-next project-next block-next" aria-label="следующее изображение"></div>
-                </div> 
-                <div class="swiper-container project__slider">
-                    <div class="swiper-wrapper project__wrapper">
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project1.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project2.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project3.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project4.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project5.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project6.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project7.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project8.png" alt="логотип компании" class="project-picture">
-                        </div>
-                        <div class="swiper-slide project-slide">
-                            <img src="img/project9.png" alt="логотип компании" class="project-picture">
+                <div class="project__slider--container"> 
+                    <div class="swiper-block-btn progect-block-btn">
+                        <div class="swiper-button-prev project-prev block-prev" aria-label="предыдущее изображение"></div>
+                        <div class="swiper-button-next project-next block-next" aria-label="следующее изображение"></div>
+                    </div>    
+                    <div class="swiper-container project__slider">
+                    
+                        <div class="swiper-wrapper project__wrapper">
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project1.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project2.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project3.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project4.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project5.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project6.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project7.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project8.png" alt="логотип компании" class="project-picture">
+                            </div>
+                            <div class="swiper-slide project-slide">
+                                <img src="img/project9.png" alt="логотип компании" class="project-picture">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1769,23 +1774,29 @@
 <!-- ADDRESS -->
         <section id="address" class="address">
             <div class="container address__container">
-                <h2 class="address__header">Контакты</h2>
+                <div class="header-container">
+                    <h2 class="address__header">Контакты</h2>
+                </div>
                 <div class="address__content">
                     <div class="address-border">
                         <address class="address__contact">
-                            <span class="contact-name">Шоурум №4</span>
+                            <h3 class="contact-name">Шоурум №4</h3>
                             <span class="contact-street">Леонтьевский переулок, дом 5, строение 1</span>
-                            <label class="form-fedback-labele">Заказать обратный звонок</label>
+                            <h3 class="form-fedback-label">Заказать обратный звонок</h3>
                             <form action="https://jsonplaceholder.typicode.com/posts" novalidate="novalidate" autocomplete="on" method="POST" class="form-fedback">
                                 <input type="text" class="fedback-form-element fedback-name" placeholder="Имя*" autocomplete="off" data-validate-field="name" name="name" id="name">
                                 <input type="tel" class="fedback-form-element fedback-phone" placeholder="Телефон*" autocomplete="off" data-validate-field="tel" data-validate-rules="phone" inputmode="tel" name="tel" id="tel">
                                 <button type="submit" class="fedback-form-element fedback-btn btn-border" tabindex="0">Заказать</button> 
                             </form>
-                            <span class="contact-one-click">Связаться в один клик</span>
-                            <div class="contact-social">
-                                <a href="#" class="contact-icon contact-whatsApp tab-btn"></a>
-                                <a href="#" class="contact-icon contact-telegramm tab-btn"></a>
-                            </div>
+                            <h3 class="contact-one-click">Связаться в один клик</h3>
+                            <ul class="contact-social">
+                                <li>
+                                    <a href="#" class="contact-icon contact-whatsApp tab-btn"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="contact-icon contact-telegramm tab-btn"></a>
+                                </li>
+                            </ul>
                         </address>
                     </div>
                     <!-- <div class="map-container"> -->

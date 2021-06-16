@@ -296,7 +296,7 @@
         margin-bottom: 87px;
     }
     .catalog__header {
-        margin-right: 45px;
+        margin-right: 41px;
     }
     .catalog__nav {
         transform: translateY(-13px);
@@ -317,6 +317,9 @@
     .catalog__accordion {
         width: 100%;
     }
+    .catalog__card-picture {
+        margin-bottom: 23px;
+    }
     .ui-accordion .ui-accordion-header {
         padding: 40.5px 0;
     }
@@ -327,7 +330,10 @@
 
 @media (max-width: 768px) {
     .catalog__header{
-        font-size: max(6vw, 28px);
+        font-size: max(6.2vw, 28px);
+    }
+    .catalog__item:not(:last-child) {
+        margin-right: 50px;
     }
 }
 
@@ -367,7 +373,10 @@
     }
     .ui-accordion-content-active {
         height: 438px;
-    }    
+    }   
+    .accordion__period-item {
+        margin-right: 0;
+    } 
     .ui-icon {
         width: 35px;
         height: 35px;

@@ -239,7 +239,7 @@ var projectsSwiper = new Swiper('.project__slider', {
 	slidesPerGroup: 1,
 	
 	breakpoints: {
-		880: {
+		760: {
 			slidesPerView: 2,
 	 		spaceBetween: 34,
 	 		slidesPerGroup: 2,
@@ -319,6 +319,24 @@ var projectsSwiper = new Swiper('.project__slider', {
 	 document.querySelector(`[data-target="${path}"]`).classList.add('tab-active');
    });
  });
+
+
+//TOOLTIP
+tippy('#tooltip1', {
+    content: 'Пример современных тенденций - современная методология разработки',
+	theme: 'lilac',
+});
+  tippy('#tooltip2', {
+    content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+	theme: 'lilac',
+});
+  tippy('#tooltip3', {
+    content: 'В стремлении повысить качество',
+	theme: 'lilac',
+});
+  
+
+
  
  //SCROLL <980px
  if (document.documentElement.clientWidth <= 980) {

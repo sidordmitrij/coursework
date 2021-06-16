@@ -200,6 +200,7 @@
 
 @media (max-width: 980px) {
     .gallery {
+        margin-bottom: 96px;
         padding-bottom: 50px;
     }
     .gallery__container {
@@ -228,7 +229,7 @@
 
 @media (max-width: 680px) {
     .gallery {
-        margin-bottom: 85px;
+        margin-bottom: 92px;
         padding-top: 55px;
     }
     .gallery__content {
@@ -242,6 +243,8 @@
         margin-bottom: 5px;
     }
     .gallery__content-text {
+        margin-bottom: 0;
+        bottom: 61px;
         left: 15px;
     }
     .gallery__slider {

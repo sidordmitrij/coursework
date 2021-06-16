@@ -293,6 +293,7 @@
     .publications__check {
        height: 129px;
        flex-wrap: wrap; 
+       margin-bottom: 25px;
     }
     /* .check-label, */
     .publication-item {
@@ -305,11 +306,23 @@
         margin-bottom: 40px;
     }
     .publications-block-btn {
+        height: 67px;
         margin-bottom: 2px;
+    }
+    .publication-prev, 
+    .publication-next {
+        top: 48%;
+    }
+    .publication-pagination {
+        padding-top: 21px;
     }
     .publication__wrapper {
         width: 615px;
         margin: 0 auto;
+    }
+    .publication-namePrice {
+        margin-bottom: 15px;
+        line-height: 24px;
     }
 }
 

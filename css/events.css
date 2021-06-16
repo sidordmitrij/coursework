@@ -159,6 +159,9 @@
     .event-card {
         width: calc(100% / 2 - 17px);
     }
+    .events__card-content {
+        padding-top: 15px;
+    }
     .event-card:nth-child(n + 3) {
         display: none;
     }
@@ -210,6 +213,8 @@
     }
     .events__card-content {
         padding-right: 15px;
+        padding-top: 0;
+        padding-left: 27px;
     }
     .events__btn {
         display: none;
@@ -220,5 +225,6 @@
     }
     .events__link {
         width: 93px;
+        bottom: 60px;
     }
 }
