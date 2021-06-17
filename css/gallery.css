@@ -18,7 +18,7 @@
 .gallery__content {
     /* position: relative; */
     display: block;
-    width: max(22vw, 420px);
+    width: max(29vw, 420px);
     margin-right: 48px;
 }
 
@@ -125,7 +125,8 @@
 
 .gallery__slider {
     position: initial;
-    width: 1200px;
+    width: -webkit-fill-available;
+    /* width: 1200px; */
 }
 
 .gallery-wrapper {
@@ -261,4 +262,5 @@
         margin: 0 auto;
     }
 }
+
 
