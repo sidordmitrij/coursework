@@ -10,6 +10,7 @@
 }
 
 html {
+  min-height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /*включаем border и padding в общие размеры элементов*/

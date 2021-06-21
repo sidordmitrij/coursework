@@ -185,7 +185,10 @@
 @media (max-width: 1200px) {
     .gallery {
         padding-bottom: 59px;
-    }        
+    } 
+    .gallery__content {
+        width: min(43vw, 565px);
+    }       
     .gallery-wrapper {
         height: 615px;
     } 
