@@ -1,6 +1,6 @@
 /*CATALOG*/
 .catalog__container {
-    margin-bottom: 95px;
+    margin-bottom: 98px;
 }
 
 .catalog__tab {
@@ -15,7 +15,6 @@
 
 .catalog__header {
     margin-right: 39px;
-    margin-left: -2px;
     font-size: 48px;
     font-weight: 400;
 }
@@ -163,6 +162,7 @@
 .ui-accordion .ui-accordion-content {
     padding-top: 2em;
     padding-left: 0;
+    padding-right: 5em;
 }
 
 /* .ui-accordion .ui-accordion-content:nth-of-type(3n)  
@@ -264,7 +264,7 @@
     font-family: OpenSans;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
     .catalog__container {
         margin-bottom: 95px;
     }
@@ -288,6 +288,9 @@
     }
     .accordion__period-item {
         margin-right: 50px;
+    }
+    .ui-accordion .ui-accordion-content {
+        padding-right: 2.2em;
     }
 }
 

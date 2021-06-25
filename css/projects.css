@@ -6,13 +6,12 @@
 
 .project__header {
     margin-bottom: 32px;
-    margin-left: -4px;
     font-size: 48px;
     font-weight: 400;
 }
 
 .project__text {
-    width: 66%;
+    width: 65.5%;
     margin-bottom: 20px;
 }
 
@@ -78,7 +77,6 @@
 
    .project__slider-header {
        margin-bottom: 15px;
-       margin-left: -2px;
        font-weight: 700;
        font-size: 24px;
        letter-spacing: -.5px;
