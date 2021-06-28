@@ -266,37 +266,46 @@
 
 @media (max-width: 1600px) {
     .catalog__container {
-        margin-bottom: 95px;
+        margin-bottom: 97px;
     }
     .catalog__nav {
         transform: translateY(-6px);
+    }
+    .catalog__header {
+    margin-left: -3px;
+    margin-right: 41px;
     }
     .catalog__tab {
         margin-bottom: 3px;
     }
     .catalog__text {
-        margin-bottom: 38px;
+        margin-bottom: 35px;
+    }
+    .catalog__card {
+        width: 47.25%;
     }
     .catalog__card-picture {
-        margin-bottom: 25px;
+        margin-bottom: 23px;
     }
     .catalog__accordion {
-        width: 47%;
+        width: 48%;
+        padding-left: 5px;
     }
     .ui-accordion-content-active {
         max-height: 438px;
     }
     .accordion__period-item {
-        margin-right: 50px;
+        margin-right: 52px;
     }
     .ui-accordion .ui-accordion-content {
-        padding-right: 2.2em;
+        padding-right: 0;
+        overflow-x: hidden;
     }
 }
 
 @media (max-width: 980px) {
     .catalog__container {
-        margin-bottom: 87px;
+        margin-bottom: 85px;
     }
     .catalog__header {
         margin-right: 41px;
@@ -307,8 +316,12 @@
     .catalog__tab-btn {
         width: 50px;
     }
+    .biography--day {
+        line-height: initial;
+    }
     .catalog__accordion {
         margin-bottom: 50px;
+        padding-left: 0;
     }
     .catalog__text {
         margin-bottom: 20px;
@@ -326,6 +339,13 @@
     .ui-accordion .ui-accordion-header {
         padding: 40.5px 0;
     }
+    .ui-accordion .ui-accordion-content {
+        margin-left: -3px;
+        padding-top: 1.9em;
+    }
+    .accordion__period-item {
+        margin-right: 44px;
+    }
     .ui-accordion-content-active {
         height: 340px;
     }
@@ -342,7 +362,7 @@
 
 @media (max-width: 750px) {
     .catalog__container {
-        margin-bottom: 55px;
+        margin-bottom: 54px;
     }
     .catalog__tab {
         display: block;
@@ -401,8 +421,20 @@
 }
 
 @media (max-width: 480px) {
+    .catalog__nav {
+        transform: translateY(-11px);
+    }
     .biography-name {
+        margin-bottom: 3px;
         font-weight: 600;
+        letter-spacing: normal;
+    }
+    .biography--day {
+        line-height: 38px;
+    }
+    .biography {
+        margin-top: -5px;
+        padding-right: 3px;
     }
     .accordion__period-list {
         flex-wrap: nowrap;
@@ -417,5 +449,9 @@
     .ui-accordion .ui-accordion-content {
         padding: 23px 0 11px;
     } 
+    .ui-icon {
+        right: -3px;
+        top: calc(50% - 9px);
+    }
 }
   

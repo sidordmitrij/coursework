@@ -211,6 +211,11 @@ selects.forEach((sel) => {
 				spaceBetween: 34,
 				observer: true,
 			},
+			1000: {
+				slidesPerView: 2,
+				spaceBetween: 47,
+				observer: true,
+			},
 			1500: {
 				slidesPerView: 3,
 				spaceBetween: 50,
@@ -368,7 +373,7 @@ tippy('#tooltip1', {
 			});
 		
 		// Добавим на карту ползунок масштаба и линейку.
-		myMap.controls.add('zoomControl');
+		myMap.controls.add('zoomControl', {right:0, top:15});
 		
             // Создаём макет содержимого.
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(

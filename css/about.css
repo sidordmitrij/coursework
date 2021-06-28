@@ -12,17 +12,24 @@
 .about__text {
     max-width: 1085px;
 }
+@media (max-width: 1024px) {
+    .about__header {
+        margin-left: -3px;
+    }
+}
 
 @media (max-width: 768px) {
     .about__container {
         margin-bottom: max(9vw,40px);
     }
     .about__header {
-        margin-bottom: max(4vw, 11px);
-        font-size: max(6vw, 28px);
+        margin-bottom: max(4.3vw, 11px);
+        margin-left: 0;
+        font-size: max(6.3vw, 28px);
     }
     .about__text {
       font-size: max(2.07vw, 14px);
       line-height: max(4.2vw, 2em);
+      letter-spacing: .1px;
     }
 }

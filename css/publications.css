@@ -267,18 +267,28 @@
 }
 
 @media (max-width: 1280px) {
+    .publications {
+        margin-bottom: 92px;
+    }
+    .publications__header {
+        margin-left: -5px;
+    }
     .publication__wrapper {
         width: 629px;
     }
     .publication-card-picture {
-        margin-bottom: 10px;
+        margin-bottom: 8px
+    }
+    .publication-namePrice {
+        margin-bottom: 12px;
+        line-height: 26px;
     }
 }
 
 @media (max-width: 968px) {
     .publications {
-        margin-bottom: 110px;
-        padding-top: 98px;
+        margin-bottom: 96px;
+        padding-top: 101px;
         padding-bottom: 0;
         background: url(../img/pablications768.jpg) center center no-repeat;
         background-size: cover;
@@ -320,7 +330,7 @@
         margin: 0 auto;
     }
     .publication-namePrice {
-        margin-bottom: 15px;
+        margin-bottom: 14px;
         line-height: 24px;
     }
 }
@@ -329,15 +339,32 @@
     .publications__header{
         font-size: max(6.2vw, 28px);
     }
+    .publication-slide {
+        min-height: 516px;
+    }
+    .publication-card-picture {
+        margin-bottom: 12px;
+    }
+    .pablication-name {
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+    .pablication-price {
+        line-height: 25px;
+    }
 }
 
 @media (max-width: 760px) {
     .publications {
         margin-bottom: 54px;
-        padding-top: 55px;
+        padding-top: 52px;
     }
     .publications__header {
         margin-bottom: 15px;
+        margin-left: -3px;
+    }
+    .check ~ .check-span {
+        top: 14px;
     }
     .check-header {
         height: 40px;
@@ -348,6 +375,7 @@
     }
     .check-header {
         padding: 0;
+        line-height: 35px;
     }
     .check-header,
     .publication-item {
@@ -400,8 +428,8 @@
         line-height: 16px;
     }
     .pablication-price {
-        margin-bottom: 11px;
-        line-height: 20px;
+        margin-bottom: 12px;
+        line-height: 16px;
     }
     .card-content,
     .publication-card-btn {

@@ -15,20 +15,21 @@
 .address__content {
     display: flex;
     justify-content: space-between;
+    padding-left: calc((100% - 1603px) / 2);
 }
 
 .contact-container {
-    width: 35.5%;
-    border: 1px solid var(--grey);
+    border-top: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
 }
 
 .address__contact {
     display: flex;
     flex-direction: column;
+    width: 35.5%;
     margin: 0 auto;
     padding-top: 126px;
     padding-bottom: 122px;
-    padding-left: calc((100% - 366px) / 2);
 }
 .contact-name,
 .form-fedback-label,
@@ -41,8 +42,12 @@
     font-size: 24px;
 }
 
+.contact-name {
+    margin-bottom: 3px;
+}
+
 .contact-street {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
 }
 
 .form-fedback-label {
@@ -97,7 +102,7 @@
 }
 
 .contact-one-click {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     /* letter-spacing: -1px; */
 }
 
@@ -127,9 +132,14 @@
     width: 70%;
 }
 
-.address__map.map {
-    width: 64.5%;
+.address__map {
+    width: 83.5%;
+    border-left: 1px solid var(--grey);
 }
+
+/* .address__map.map {
+    border-left: 1px solid var(--grey);
+} */
 
  [class*='ground-pane'] {
      filter: grayscale(1);
@@ -137,6 +147,12 @@
 
  .ymaps-2-1-78-zoom {
      height: 0 !important;
+ }
+
+ .ymaps-2-1-78-gototech,
+ .ymaps-2-1-78-copyright,
+ .ymaps-2-1-78-gotoymaps {
+     display: none;
  }
 
  .ymaps-2-1-78-controls__control {
@@ -150,23 +166,33 @@
          margin: 0 auto;
          /* padding-left: 50px; */
      }
-
-    .contact-container {
-         width: 47.5%;
+     .address__header {
+        margin-left: -4px;
      }
+    /* .contact-container {
+         width: 47.5%;
+     } */
      .address__contact {
-         padding-left: 49px;
-         margin-right: 100px;
-         padding-bottom: 103px;
+        width: 47.5%;
+        margin-right: 100px;
+        padding-left: 49px;
+        padding-top: 123px;
+        padding-bottom: 103px;
+     }
+     .form-fedback-label {
+        margin-bottom: 18px;
      }
      .fedback-form-element:not(:last-child) {
         width: 335px;
     }    
     .contact-name {
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
     .contact-street {
-        margin-bottom: 26px;
+        margin-bottom: 29px;
+    }
+    .fedback-form-element:not(:last-child) {
+        margin-bottom: 21px;
     }
     .contact-icon {
         width: 60px;
@@ -185,34 +211,52 @@
     .header-container {
         letter-spacing: 1px;
     }
-    .contact-container {
+    /* .contact-container {
         width: 56.5%;
-    }
+    } */
     .address__contact {
-        /* width: 47%; */
+        width: 56.5%;
         margin-right: 35px;
         padding-top: 125px;
     }
     .form-fedback-label {
+        margin-bottom: 16px;
         font-weight: 400;
+    }
+    .contact-name {
+        font-size: 25px;
     }
  }
 
  @media (max-width: 768px) {
+    .contact-container {
+        margin-bottom: 2px;
+    }
     .address__header{
-        font-size: max(6vw, 28px);
+        font-size: max(6.05vw, 28px);
+    }
+    .form-fedback {
+        margin-right: 10px;
     }
     .fedback-form-element:not(:last-child) {
-        width: 44vw;
+        width: 43.6vw;
+        margin-bottom: 23px;
+    }
+    .fedback-btn {
+        margin-bottom: 36px;
     }
 }
 
  @media (max-width: 680px) {
-    .address__container {
+    /* .address__container {
         padding-left: 15px;
+    } */
+    .header-container {
+        letter-spacing: 0;
     }
      .address__header {
          margin-bottom: 17px;
+         margin-left: -2px;
      }
      .address__content {
          position: relative;
@@ -225,12 +269,12 @@
          width: 100%;
          margin-right: 15px;
          padding-top: 0;
-         padding-bottom: 30px;
-         padding-left: 0;
+         padding-bottom: 28px;
+         padding-left: 13px;
      }
      .contact-name {
          font-size: 1.1em;
-         line-height: 1.1em;
+         line-height: 1em;
      }
      .contact-street {
         font-size: .9em;
@@ -242,6 +286,7 @@
         top: 75px;
         left: 0;
         width: 100%;
+        border: none;
     }
     .address__map.map {
         width: 100%;
@@ -249,6 +294,7 @@
     }
      .form-fedback-label {
          font-size: 1.2em;
+         letter-spacing: -0.6px;
      }
      .fedback-form-element:not(:last-child) {
         width: 100%;
@@ -257,7 +303,7 @@
         width: 130px;
         height: 40px;
         padding: 3px;
-        margin-bottom: 17px;
+        margin-bottom: 15px;
         font-size: 13px;
     }
     .contact-one-click {
@@ -280,14 +326,22 @@
  @media (max-width: 480px) {
     .contact-street {
         font-size: .8em;
-        margin-bottom: 355px;
+        margin-bottom: 352px;
         line-height: 1.9em;
     }
     .form-fedback {
         margin-bottom: 3px;
+        margin-right: 0;
+    }
+    .fedback-form-element:not(:last-child) {
+        margin-bottom: 21px;
     }
     .contact-one-click {
         margin-bottom: 7px;
+        letter-spacing: 0.3px;
+    }
+    .contact-social {
+        padding-left: 2px;
     }
  }
 

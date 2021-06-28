@@ -67,18 +67,23 @@
 @media (max-width: 980px) {
     .footer__logo {
         height: 30px;
+        transform: translateY(-5px);
     }
 }
 
 @media (max-width: 680px) {
     .footer__container {
         flex-direction: column-reverse;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         height: 132px;
+        padding-top: 20px;
     }
     .footer__logo {
         width: 97px;
         height: 22px;
+    }
+    .footer__social {
+        margin-bottom: 25px;
     }
     .footer-icon {
         width: 50px;

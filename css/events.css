@@ -51,6 +51,7 @@
 
 .events__card-content small:last-of-type {
     margin-bottom: 2px;
+    font-size: 76%;
 }
 
 .events__card-header {
@@ -120,14 +121,16 @@
 
 @media (max-width: 1400px) {
     .events {
-        margin-bottom: 144px;
+        margin-bottom: 138px;
     }
     .events__header {
         margin-bottom: 30px;
+        margin-left: -3px;
     }
     .event-card {
         width: calc(100% / 3 - 22px);
         min-height: 681px;
+        margin-bottom: 50px;
     }
     .event-card:not(:nth-of-type(3n)) {
         margin-right: 27px;
@@ -136,30 +139,34 @@
         min-height: 196px;
     }
     .events__card-content {
+        padding-top: 17px;
         padding-left: 33px;
         padding-right: 16px;
     }
     .events__small {
-        line-height: 20px;
+        line-height: 19px;
     }
     .events__card-header {
         /* width: 77%; */
-        margin-bottom: 5px;
+        margin-bottom: 1px;
         font-size: 22px;
         letter-spacing: .5px;
     }
     .events__text {
-        padding: 0;
-        letter-spacing: .6px;
+        padding-right: 15px;
+        /* letter-spacing: .6px; */
+    }
+    .events__link {
+        bottom: 50px;
     }
 }
 
 @media (max-width: 1000px) {
     .event-card {
-        width: calc(100% / 2 - 17px);
+        width: calc(100% / 2 - 20px);
     }
     .events__card-content {
-        padding-top: 15px;
+        padding-top: 18px;
     }
     .event-card:nth-child(n + 3) {
         display: none;
@@ -168,17 +175,17 @@
         margin-right: 0px;
     }
     .event-card:nth-child(odd) {
-        margin-right: 25px;
+        margin-right: 32px;
     }
     .events__link {
-        bottom: 51px;
+        bottom: 47px;
         line-height: 25px;
     }
 }
 
 @media (max-width: 768px) {
     .events__header{
-        font-size: max(6vw, 28px);
+        font-size: max(6.3vw, 28px);
     }
     .events__small {
         margin-bottom: 0px;
@@ -186,6 +193,9 @@
     }
     .events__card-header {
         letter-spacing: .9px;
+    }
+    .events__text {
+        letter-spacing: .12px;
     }
 }
 
@@ -201,6 +211,7 @@
     }
     .event-card {
         width: 100%;
+        margin-bottom: 60px;
     }
     .event-card:nth-child(n + 4),
     .event-card:nth-child(n + 3) {
@@ -210,20 +221,29 @@
         min-height: 200px;
         margin-bottom: 16px;
     }
+    .events__small {
+        line-height: 16px;
+    }
     .events__card-content {
+        margin-bottom: 70px;
         padding-right: 15px;
         padding-top: 0;
         padding-left: 27px;
+    }       
+    .events__text {
+        letter-spacing: 0px;
+        padding-right: 10px;
     }
     .events__btn {
         display: none;
     }
     .events__card-header {
-        margin-bottom: 37px;
-        letter-spacing: .3px;
+        margin-bottom: 35px;
+        letter-spacing: .65px;
+        line-height: 34px;
     }
     .events__link {
         width: 93px;
-        bottom: 60px;
+        bottom: 49px;
     }
 }
