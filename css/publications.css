@@ -17,7 +17,7 @@
 .publications__content {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 10.6%;
 }
 
 .publications__check {
@@ -176,7 +176,9 @@
 }
 
 .publications__slider {
-    margin: 0;
+    /* margin: 0; */
+    position: initial;
+    width: auto;
 }
 
 .publications-block-btn {
@@ -198,7 +200,7 @@
 }
 
 .publication-slide {
-    max-width: 350px;
+    /* max-width: 350px; */
     min-height: 500px;  
 }
 /* 
@@ -257,18 +259,24 @@
     background-color: transparent;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1650px) {
+    .publications__content {
+        margin-right: 2%;
+    }
     .publication__wrapper {
     width: 970px;
     }
     .publication-slide {
-        max-width: 290px;
+        max-width: 292px;
     }  
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
     .publications {
         margin-bottom: 92px;
+    }
+    .publications__content {
+       margin-right: 2%;
     }
     .publications__header {
         margin-left: -5px;
@@ -277,7 +285,7 @@
         width: 629px;
     }
     .publication-card-picture {
-        margin-bottom: 8px
+        margin-bottom: 5px
     }
     .publication-namePrice {
         margin-bottom: 12px;
@@ -285,7 +293,7 @@
     }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1020px) {
     .publications {
         margin-bottom: 96px;
         padding-top: 101px;
@@ -295,6 +303,9 @@
     }
     .publications__container {
         flex-direction: column;
+    }
+    .publications__header{
+        font-size: max(6.2vw, 28px);
     }
     .publications__content {
         margin-right: 0;
@@ -329,13 +340,26 @@
         width: 615px;
         margin: 0 auto;
     }
+    .publication-slide {
+        min-height: 516px;
+    }
+    .publication-card-picture {
+        margin-bottom: 12px;
+    }
+    .pablication-name {
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+    .pablication-price {
+        line-height: 25px;
+    }
     .publication-namePrice {
         margin-bottom: 14px;
         line-height: 24px;
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .publications__header{
         font-size: max(6.2vw, 28px);
     }
@@ -352,9 +376,9 @@
     .pablication-price {
         line-height: 25px;
     }
-}
+} */
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
     .publications {
         margin-bottom: 54px;
         padding-top: 52px;
@@ -415,9 +439,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .publication-slide:nth-child(odd) {
+    /* .publication-slide:nth-child(odd) {
         margin-right: 30px;
-    }
+    } */
     .publication-slide {
         width: 44%;
         min-height: 304px;

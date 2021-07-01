@@ -3,6 +3,7 @@
     max-width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .address__header {
@@ -176,7 +177,7 @@
         width: 47.5%;
         margin-right: 100px;
         padding-left: 49px;
-        padding-top: 123px;
+        padding-top: 125px;
         padding-bottom: 103px;
      }
      .form-fedback-label {

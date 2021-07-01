@@ -22,7 +22,7 @@
     height: auto;
     min-height: 700px;
     margin-bottom: 46px;
-    border: 2px solid var(--grey);
+    outline: 2px solid var(--grey);
 }
 
 .events__card-content {
@@ -35,7 +35,7 @@
 }
 
 .event-card:not(:nth-of-type(3n)) {
-    margin-right: 50px;
+    margin-right: 55px;
 }
 
 .event-card:nth-child(n + 4) {
@@ -50,7 +50,7 @@
 }
 
 .events__card-content small:last-of-type {
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     font-size: 76%;
 }
 
@@ -129,11 +129,11 @@
     }
     .event-card {
         width: calc(100% / 3 - 22px);
-        min-height: 681px;
+        min-height: 686px;
         margin-bottom: 50px;
     }
     .event-card:not(:nth-of-type(3n)) {
-        margin-right: 27px;
+        margin-right: 32px;
     }
     .events__card-picture {
         min-height: 196px;
@@ -175,21 +175,21 @@
         margin-right: 0px;
     }
     .event-card:nth-child(odd) {
-        margin-right: 32px;
+        margin-right: 38px;
     }
     .events__link {
-        bottom: 47px;
+        bottom: 51px;
         line-height: 25px;
     }
-}
+/* }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { */
     .events__header{
         font-size: max(6.3vw, 28px);
     }
-    .events__small {
+    .events__card-content small:last-of-type {
         margin-bottom: 0px;
-        line-height: 18px;
+        /* line-height: 18px; */
     }
     .events__card-header {
         letter-spacing: .9px;
@@ -199,7 +199,7 @@
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 767px) {
     .events {
         margin-bottom: 20px;
     }
@@ -216,6 +216,7 @@
     .event-card:nth-child(n + 4),
     .event-card:nth-child(n + 3) {
         display: flex;
+        margin-right: 0;
     }
     .events__card-picture {
         min-height: 200px;
@@ -229,7 +230,10 @@
         padding-right: 15px;
         padding-top: 0;
         padding-left: 27px;
-    }       
+    } 
+    .events__card-content small:last-of-type {
+        margin-bottom: 4px;
+    }      
     .events__text {
         letter-spacing: 0px;
         padding-right: 10px;
@@ -244,6 +248,6 @@
     }
     .events__link {
         width: 93px;
-        bottom: 49px;
+        bottom: 51px;
     }
 }

@@ -114,7 +114,7 @@ selects.forEach((sel) => {
 
 		slidesPerView: 1,
 		// slidesPerColumn: 1,
-		spaceBetween: 50,
+		//spaceBetween: 50,
 		slidesPerGroup: 1,
 	
 		breakpoints: {
@@ -194,9 +194,6 @@ selects.forEach((sel) => {
 			});
 	});
 
-	
-
-
 	//PUBLICATIONS-SWIPER
 	if (document.documentElement.clientWidth > 767) {
 	var publicationSwiper = new Swiper('.publications__slider', {
@@ -204,22 +201,21 @@ selects.forEach((sel) => {
 		slidesPerView: 2,
 		spaceBetween: 34,
 		slidesPerGroup: 1,
-	
+			
 		breakpoints: {
-			750: {
-				slidesPerView: 2,
-				spaceBetween: 34,
-				observer: true,
-			},
-			1000: {
-				slidesPerView: 2,
-				spaceBetween: 47,
-				observer: true,
-			},
-			1500: {
+			
+			1020: {
+			 	//slidesPerView: 2,
+			 	spaceBetween: 47,
+			 },
+			 1300: {
 				slidesPerView: 3,
+				//spaceBetween: 47,
+			 },
+			1650: {
+				//slidesPerView: 3,
 				spaceBetween: 50,
-				//slidesPerGroup: 3,
+				//slidesPerGroup: 1,
 			},
 		},
 	
@@ -242,6 +238,9 @@ var projectsSwiper = new Swiper('.project__slider', {
 
 	slidesPerView: 1,
 	slidesPerGroup: 1,
+	// slidesPerColumnFill: 'row',
+	// updateOnWindowResize: true,
+	//centeredSlides: true,
 	
 	breakpoints: {
 		760: {
