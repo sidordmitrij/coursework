@@ -215,7 +215,7 @@
     .project-prev, 
     .project-next {
         position: absolute;
-        top: 50%;
+        top: 60%;
     }
     .project__slider--container {
         padding-right: 52px;

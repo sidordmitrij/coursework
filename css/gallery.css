@@ -219,7 +219,7 @@
 
 @media (max-width: 980px) {
     .gallery {
-        margin-bottom: 94px;
+        margin-bottom: 90px;
         padding-bottom: 50px;
     }
     .gallery__container {
@@ -235,7 +235,7 @@
     .gallery__content-text {
         position: absolute;
         width: 89vw;
-        bottom: 20px;
+        bottom: 25px;
         left: 50px;
     }
 }
@@ -243,6 +243,9 @@
 @media (max-width: 768px) {
     .gallery__header{
         font-size: max(6.3vw, 28px);
+    }
+    .gallery__block-btn {
+        margin-bottom: 13px;
     }
     .swiper-button-next,
     .swiper-button-prev {

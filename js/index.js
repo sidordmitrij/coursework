@@ -205,17 +205,17 @@ selects.forEach((sel) => {
 		breakpoints: {
 			
 			1020: {
-			 	//slidesPerView: 2,
+			 	slidesPerView: 2,
 			 	spaceBetween: 47,
 			 },
 			 1300: {
-				slidesPerView: 3,
-				//spaceBetween: 47,
+				slidesPerView: 'auto',
+				spaceBetween: 47,
 			 },
-			1650: {
-				//slidesPerView: 3,
+			1500: {
+				slidesPerView: 3,
 				spaceBetween: 50,
-				//slidesPerGroup: 1,
+				slidesPerGroup: 1,
 			},
 		},
 	

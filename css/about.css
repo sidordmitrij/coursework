@@ -33,3 +33,9 @@
       letter-spacing: .1px;
     }
 }
+
+@media (max-width: 320px) {
+    .about__text {
+        letter-spacing: 0;
+    }
+}

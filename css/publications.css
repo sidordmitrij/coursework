@@ -17,7 +17,7 @@
 .publications__content {
     display: flex;
     flex-direction: column;
-    margin-right: 10.6%;
+    margin-right: 2%;
 }
 
 .publications__check {
@@ -259,9 +259,12 @@
     background-color: transparent;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1500px) {
     .publications__content {
         margin-right: 2%;
+    }
+    .slider__content {
+        margin: 0 auto;
     }
     .publication__wrapper {
     width: 970px;
@@ -325,9 +328,17 @@
     .check-input-price {
         margin-bottom: 40px;
     }
+    .slider__content {
+        position: relative;
+        padding-top: 68px;
+    }
     .publications-block-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 67px;
         margin-bottom: 2px;
+        margin-left: -25px;
     }
     .publication-prev, 
     .publication-next {
@@ -430,6 +441,9 @@
     }
     .check-input-price {
         margin-bottom: 50px;
+    }
+    .slider__content {
+        padding-top: 0;
     }
     .publications-block-btn {
         display: none;
