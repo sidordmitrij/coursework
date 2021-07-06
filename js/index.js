@@ -240,14 +240,21 @@ var projectsSwiper = new Swiper('.project__slider', {
 	slidesPerGroup: 1,
 	// slidesPerColumnFill: 'row',
 	// updateOnWindowResize: true,
-	//centeredSlides: true,
+	centeredSlides: true,
+	autoHeight: true,
 	
 	breakpoints: {
-		760: {
+		680: {
 			slidesPerView: 2,
 	 		spaceBetween: 34,
 	 		slidesPerGroup: 2,
+			centeredSlides: false,
 	 	},
+		980: {
+			slidesPerView: 2,
+	 		spaceBetween: 50,
+	 		slidesPerGroup: 2,
+	 	}, 
 	 	1400: {
 	 		slidesPerView: 3,
 	 		spaceBetween: 50,
