@@ -237,23 +237,16 @@ selects.forEach((sel) => {
 var projectsSwiper = new Swiper('.project__slider', {
 
 	slidesPerView: 1,
-	slidesPerGroup: 1,
-	// slidesPerColumnFill: 'row',
-	// updateOnWindowResize: true,
-	centeredSlides: true,
-	autoHeight: true,
-	
+	spaceBetween: 50,
+		
 	breakpoints: {
 		680: {
 			slidesPerView: 2,
 	 		spaceBetween: 34,
-	 		slidesPerGroup: 2,
-			centeredSlides: false,
 	 	},
 		980: {
 			slidesPerView: 2,
 	 		spaceBetween: 50,
-	 		slidesPerGroup: 2,
 	 	}, 
 	 	1400: {
 	 		slidesPerView: 3,
