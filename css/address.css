@@ -28,9 +28,9 @@
     display: flex;
     flex-direction: column;
     width: 35.5%;
-    margin: 0 auto;
+    margin: 0 auto 121px;
     padding-top: 126px;
-    padding-bottom: 122px;
+    /* padding-bottom: 122px; */
 }
 .contact-name,
 .form-fedback-label,
@@ -176,10 +176,10 @@
      .address__contact {
         width: 47.5%;
         margin-right: 100px;
+        margin-bottom: 103px;
         padding-left: 49px;
         padding-top: 125px;
-        padding-bottom: 103px;
-     }
+    }
      .form-fedback-label {
         margin-bottom: 18px;
      }
@@ -248,7 +248,7 @@
     }
 }
 
- @media (max-width: 680px) {
+ @media (max-width: 750px) {
     /* .address__container {
         padding-left: 15px;
     } */
@@ -270,7 +270,7 @@
          width: 100%;
          margin-right: 15px;
          padding-top: 0;
-         padding-bottom: 28px;
+         margin-bottom: 29px;
          padding-left: 13px;
      }
      .contact-name {
@@ -284,14 +284,14 @@
      }     
      .address__map {
         position: absolute;
-        top: 75px;
+        top: 55px;
         left: 0;
         width: 100%;
         border: none;
     }
     .address__map.map {
         width: 100%;
-        height: 300px;
+        height: 320px;
     }
      .form-fedback-label {
          font-size: 1.2em;

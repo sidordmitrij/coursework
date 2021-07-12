@@ -8,6 +8,10 @@
     font-weight: 400;
 }
 
+.events__slider {
+    padding: 0 1px;
+}
+
 .events__cards {
     display: flex;
     /* justify-content: space-between; */
@@ -22,7 +26,7 @@
     height: auto;
     min-height: 700px;
     margin-bottom: 46px;
-    outline: 2px solid var(--grey);
+    outline: 1px solid var(--grey);
 }
 
 .events__card-content {

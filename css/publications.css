@@ -147,7 +147,7 @@
     height: 100%;
     padding-left: 10px;
     color: var(--white);
-    background-color: var(--lilac);
+    background-color: rgba(157, 92, 208, 0.5);
 }
 
 .check-price-from::placeholder,

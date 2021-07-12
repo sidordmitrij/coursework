@@ -23,12 +23,14 @@
 .header__burger-menu {
     display: none;
     width: 36px;
-    height: 28px;
+    height: 36px;
     background: url("data:image/svg+xml,%0A%3Csvg width='36' height='29' viewBox='0 0 36 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='36' height='3.65217' transform='matrix(-1 0 0 1 36 0.699997)' fill='white'/%3E%3Cpath d='M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z' fill='white'/%3E%3Cpath d='M24 25.0478H0V28.7H24V25.0478Z' fill='white'/%3E%3C/svg%3E%0A") center center no-repeat;
+    transition: background .2s ease-in-out;
 }
 
-.header__logo.is-active,
-.header__burger-menu.is-active {
+.header__logo.is-active
+.header__burger-menu.is-active 
+{
     display: none;
 }
 
@@ -95,18 +97,41 @@
 .header__btn-hide {
     display: none;
     position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
     top: 30px;
     left: 50px;
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
-    color: var(--white);
+    width: 30px;
+    height: 30px;
+    padding: 0;
     background-color: transparent;
+}
+
+.burger-element {
+    display: block;
+    width: 130%;
+    height: 3px;
+    background-color: var(--white);
+    transition: background-color .2s ease-in-out;
+}
+
+.burger-line1 {
+    transform-origin: left top;
     transform: rotate(45deg);
 }
 
+.burger-line2 {
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+}
+
+.header__btn-hide.is-active:hover .burger-element,
+.header__btn-hide.is-active:focus .burger-element {
+    background-color: var(--lilac);
+} 
+
 .header__btn-hide.is-active {
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     right: 50px;
@@ -114,7 +139,7 @@
 }
 
 .header__btn-hide.is-active768 {
-    display: block;
+    display: flex;
     position: absolute;
     top: 30px;
     right: 40px;
@@ -123,7 +148,7 @@
 
 .header__btn-hide.is-active520 {
     font-weight: 400;
-    display: block;
+    display: flex;
     position: absolute;
     top: 0px;
     right: 40px;
@@ -264,10 +289,6 @@
     transform: scaleY(-1) rotate(45deg);
 
 }
-
-/* .scrollbar-container {
-    overflow: hidden;
-} */
 
 .scrollbar {
     display: block;
@@ -484,7 +505,7 @@
         top: -100px;
     }
     .header__burger-menu {
-        display: block;
+        display: flex;
     }
     .header__nav,
     .header__nav-item:not(:last-child) {
