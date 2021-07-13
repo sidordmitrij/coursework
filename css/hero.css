@@ -126,7 +126,7 @@
 
 @media (max-width: 768px) {
     .hero__container {
-        margin-bottom: 79px;
+        margin-bottom: max(10%, 44px);
     }
     .hero__content {
         padding-top: max(15vw, 35px);
@@ -143,8 +143,8 @@
     }
     .hero__content-btn {
         width: max(47%, 200px);
-        height: max(9.3vw, 40px);
-        padding-top: 2.2vw;
+        /* height: max(9.3vw, 40px); */
+        /* padding-top: 2.2vw; */
         margin-bottom: max(17vw, 50px);
         font-size: max(2.35vw, 12px);
     }
@@ -156,7 +156,7 @@
 
 @media (max-width: 520px) {
     .hero__container {
-        margin-bottom: 44px;
+        margin-bottom: 35px;
     }
     .hero__content {
         padding-top: max(10vw, 35px);
@@ -177,6 +177,8 @@
         line-height: 1.4em;
     }
     .hero__content-btn {
-        padding-top: .1vw;
+        margin-bottom: max(20vw, 50px);
+        padding: 0 5px;
+        /* padding-top: .1vw; */
     }
 }
