@@ -147,11 +147,11 @@
         /* padding-top: 2.2vw; */
         margin-bottom: max(17vw, 50px);
         font-size: max(2.35vw, 12px);
+        line-height: 4vw;
     }
     .hero-wrapper {
         height: max(100vw, 355px);
     }
-
 }
 
 @media (max-width: 520px) {
@@ -180,5 +180,6 @@
         margin-bottom: max(20vw, 50px);
         padding: 0 5px;
         /* padding-top: .1vw; */
+        line-height: 10.6vw;
     }
 }

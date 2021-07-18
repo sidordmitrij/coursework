@@ -186,13 +186,54 @@ selects.forEach((sel) => {
 	
 	//PUBLICATIONS
 	//Publication-check
-	const checkHeader = document.querySelectorAll('.check-header');
-	checkHeader.forEach((btn)	=> {
-			btn.addEventListener('click', function() {
-			 	btn.parentNode.querySelector('.publication-item').classList.toggle('is-active') 
-					
-			});
-	});
+ const publicationBtn = document.querySelector('.check-header');
+ const publicationFormLabel = document.querySelectorAll('.check-label');
+ const publicationFormInput = document.querySelectorAll('.check');
+ const publicationBtnArrow = document.querySelector('.check-header-arrow');
+
+ const showActiveCheckbox = function()  {
+   publicationFormInput.forEach(el => {
+	 if (el.checked) {
+		el.parentNode.classList.add('is-active')
+	 }
+   })
+ }
+
+ publicationBtn.addEventListener('click', () => {
+	 publicationBtnArrow.classList.toggle('arrow-active');
+	 publicationFormLabel.forEach(el => {
+	   el.classList.toggle('is-active')
+	   showActiveCheckbox();
+	 })
+   })
+ 
+  for (let i = 0; i < publicationFormInput.length; i++) {
+	 const el = publicationFormInput[i];
+	 el.addEventListener('change', () => {
+	   el.parentNode.classList.toggle('is-active');
+	   showActiveCheckbox();
+	 })
+   }
+   showActiveCheckbox();
+ 
+
+
+//  window.addEventListener('resize', () => {
+//     eventHidden();
+//   })
+
+//   showMore();
+//   eventHidden();
+//   publicationAccordion();
+//   publicationCheck();
+
+
+
+
+
+
+
+
 
 	//PUBLICATIONS-SWIPER
 	if (document.documentElement.clientWidth > 767) {

@@ -402,28 +402,54 @@
         top: 14px;
     }
     .check-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         height: 40px;
+        padding: 0;
+        line-height: 35px;
         border-top: 1px solid rgba(255, 255, 255, 0.5);
     }
+    .check-header-arrow {
+        display: block;
+        stroke: #fff;
+    }
+    .check-header-arrow.arrow-active {
+        stroke: var(--lilac);
+        transform: rotate(180deg);
+        margin-top: 5px;
+      }
+    .arrow-active path {
+        stroke: var(--lilac);
+      }
     .check-label {
         margin: 0;
     }
-    .check-header {
-        padding: 0;
-        line-height: 35px;
+    .check-label {
+        display: none;
     }
-    .check-header,
-    .publication-item {
+    .check-label.is-active {
+        display: flex;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .check-header
+    /* .publication-item */
+     {
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
     .publication-item {
+        margin-right: 0;
+    }
+    /* .publication-item {
         display: none;
     }
     .publication-item.is-active {
         display: flex;
         height: 40px;
         margin-right: 0;
-    }
+    } */
     .publications__check {
         flex-wrap: nowrap;
         height: auto;
@@ -432,7 +458,20 @@
     .check-label,
     .check {
         width: 100%;
-    }    
+    } 
+    .check.active {
+        display: block;
+      }
+    
+      /* .check[type="checkbox"]:checked + .publication__form-checkbox .publication__form-icon {
+        display: block;
+      } */
+    /* .check {
+        display: none;
+    }
+    .check.active {
+        display: block;
+    }    */
     .check:checked ~ .check-btn {
         display: block;
     }

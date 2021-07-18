@@ -227,7 +227,7 @@
     }
     .gallery__content {
         width: 282px;
-        margin-bottom: 70px;
+        margin-bottom: 13px;
     }
     .gallery__slider {
         margin-bottom: 100px;
@@ -237,6 +237,9 @@
         width: 89vw;
         bottom: 25px;
         left: 50px;
+    }
+    .choices.is-open {
+        margin-bottom: 70px;
     }
 }
 
@@ -264,7 +267,7 @@
     }
     .gallery__content {
         width: 100%;
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
         margin-right: 0;
     }
     .gallery__header {
