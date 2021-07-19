@@ -161,15 +161,15 @@
      .project__container{
          margin-bottom: 97px;
      }
-     .project__header {
+     /* .project__header {
          margin-left: -4px;
-     }
+     } */
      .project__text {
          width: 100%;
-         margin-bottom: 21px;
+         margin-bottom: 19px;
      }
      .project__slider-header {
-        margin-left: -3px;
+        /* margin-left: -3px; */
         margin-bottom: 25px;
      }
      .project__slider--container {
@@ -188,7 +188,7 @@
         margin-bottom: 95px;
     }
     .project__text {
-        margin-bottom: 25px;
+        margin-bottom: 26px;
     }
     .project-slide {
         min-height: 107px;
@@ -224,7 +224,7 @@
          margin-bottom: 15px;
      }
      .project__text {
-         margin-bottom: 10px;
+         margin-bottom: 9px;
      }
      .project__slider-header {
          margin-bottom: 10px;

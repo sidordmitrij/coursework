@@ -272,20 +272,20 @@
         transform: translateY(-6px);
     }
     .catalog__header {
-    margin-left: -3px;
+    /* margin-left: -3px; */
     margin-right: 41px;
     }
     .catalog__tab {
-        margin-bottom: 3px;
+        margin-bottom: 1px;
     }
     .catalog__text {
-        margin-bottom: 35px;
+        margin-bottom: 39px;
     }
     .catalog__card {
         width: 47.25%;
     }
     .catalog__card-picture {
-        margin-bottom: 23px;
+        margin-bottom: 21px;
     }
     .catalog__accordion {
         width: 48%;
@@ -294,8 +294,11 @@
     .ui-accordion-content-active {
         max-height: 438px;
     }
+    .ui-accordion .ui-accordion-header {
+        padding: 41px 0;
+    }
     .accordion__period-item {
-        margin-right: 52px;
+        margin-right: 62px;
     }
     .ui-accordion .ui-accordion-content {
         padding-right: 0;
@@ -308,7 +311,7 @@
         margin-bottom: 85px;
     }
     .catalog__header {
-        margin-right: 41px;
+        margin-right: 39px;
     }
     .catalog__nav {
         transform: translateY(-13px);
@@ -334,17 +337,17 @@
         width: 100%;
     }
     .catalog__card-picture {
-        margin-bottom: 23px;
+        margin-bottom: 20px;
     }
     .ui-accordion .ui-accordion-header {
-        padding: 40.5px 0;
+        padding: 41px 0;
     }
     .ui-accordion .ui-accordion-content {
         margin-left: -3px;
         padding-top: 1.9em;
     }
     .accordion__period-item {
-        margin-right: 44px;
+        margin-right: 58px;
     }
     .ui-accordion-content-active {
         height: 340px;
@@ -391,7 +394,7 @@
         padding: 25px 0 16px;
     }
     .ui-accordion .ui-accordion-header {
-        padding: 25px 0;
+        padding: 24.5px 0;
         font-size: 1.18em;
     }
     .ui-accordion-content-active {
@@ -415,7 +418,7 @@
         background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='15' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' fill='%23ECECEC'/%3E%3Ccircle r='15' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' stroke='%23ECECEC'/%3E%3Cpath d='M20 16L15 11L10 16' stroke='black'/%3E%3C/svg%3E%0A") center center no-repeat;
     }
     .catalog__card-picture {
-        margin-bottom: 12px;
+        margin-bottom: 13px;
     }
     
 }
@@ -447,7 +450,7 @@
         font-size: 1.1em;
     }
     .ui-accordion .ui-accordion-content {
-        padding: 23px 0 11px;
+        padding: 26px 0 13px;
     } 
     .ui-icon {
         right: -3px;

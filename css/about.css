@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 320px) {
+    .about__header {
+        margin-bottom: max(4.6vw, 11px);
+    }
     .about__text {
         letter-spacing: 0;
     }

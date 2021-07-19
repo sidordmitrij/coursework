@@ -129,7 +129,7 @@
     }
     .events__header {
         margin-bottom: 30px;
-        margin-left: -3px;
+        /* margin-left: -3px; */
     }
     .event-card {
         width: calc(100% / 3 - 22px);
@@ -170,7 +170,7 @@
         width: calc(100% / 2 - 20px);
     }
     .events__card-content {
-        padding-top: 18px;
+        padding-top: 20px;
     }
     .event-card:nth-child(n + 3) {
         display: none;
@@ -182,7 +182,7 @@
         margin-right: 38px;
     }
     .events__link {
-        bottom: 51px;
+        bottom: 49px;
         line-height: 25px;
     }
 /* }

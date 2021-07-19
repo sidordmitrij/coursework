@@ -167,9 +167,9 @@
          margin: 0 auto;
          /* padding-left: 50px; */
      }
-     .address__header {
+     /* .address__header {
         margin-left: -4px;
-     }
+     } */
     /* .contact-container {
          width: 47.5%;
      } */
@@ -257,7 +257,7 @@
     }
      .address__header {
          margin-bottom: 17px;
-         margin-left: -2px;
+         /* margin-left: -2px; */
      }
      .address__content {
          position: relative;
@@ -274,9 +274,10 @@
          padding-left: 13px;
      }
      .contact-name {
-         font-size: 1.1em;
-         line-height: 1em;
-     }
+        margin-bottom: 0;
+        font-size: 1.2em;
+        line-height: 1em;
+    }
      .contact-street {
         font-size: .9em;
         margin-bottom: 360px;
@@ -338,7 +339,7 @@
         margin-bottom: 21px;
     }
     .contact-one-click {
-        margin-bottom: 7px;
+        margin-bottom: 8px;
         letter-spacing: 0.3px;
     }
     .contact-social {

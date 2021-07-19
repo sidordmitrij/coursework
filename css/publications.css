@@ -281,9 +281,9 @@
     .publications__content {
        margin-right: 2%;
     }
-    .publications__header {
+    /* .publications__header {
         margin-left: -5px;
-    }
+    } */
     .publication__wrapper {
         width: 629px;
     }
@@ -298,7 +298,7 @@
 
 @media (max-width: 1020px) {
     .publications {
-        margin-bottom: 96px;
+        margin-bottom: 93px;
         padding-top: 101px;
         padding-bottom: 0;
         background: url(../img/pablications768.jpg) center center no-repeat;
@@ -320,7 +320,7 @@
     }
     /* .check-label, */
     .publication-item {
-        margin-right: max(7.2vw, 10px);
+        margin-right: max(7.5vw, 10px);
     }
     .check-price {
         margin-bottom: 5px;
@@ -355,7 +355,7 @@
         min-height: 516px;
     }
     .publication-card-picture {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
     .pablication-name {
         font-weight: 600;
@@ -370,25 +370,6 @@
     }
 }
 
-/* @media (max-width: 768px) {
-    .publications__header{
-        font-size: max(6.2vw, 28px);
-    }
-    .publication-slide {
-        min-height: 516px;
-    }
-    .publication-card-picture {
-        margin-bottom: 12px;
-    }
-    .pablication-name {
-        font-weight: 600;
-        letter-spacing: .5px;
-    }
-    .pablication-price {
-        line-height: 25px;
-    }
-} */
-
 @media (max-width: 767px) {
     .publications {
         margin-bottom: 54px;
@@ -396,7 +377,7 @@
     }
     .publications__header {
         margin-bottom: 15px;
-        margin-left: -3px;
+        /* margin-left: -3px; */
     }
     .check ~ .check-span {
         top: 14px;
@@ -442,14 +423,6 @@
     .publication-item {
         margin-right: 0;
     }
-    /* .publication-item {
-        display: none;
-    }
-    .publication-item.is-active {
-        display: flex;
-        height: 40px;
-        margin-right: 0;
-    } */
     .publications__check {
         flex-wrap: nowrap;
         height: auto;
@@ -461,17 +434,7 @@
     } 
     .check.active {
         display: block;
-      }
-    
-      /* .check[type="checkbox"]:checked + .publication__form-checkbox .publication__form-icon {
-        display: block;
-      } */
-    /* .check {
-        display: none;
     }
-    .check.active {
-        display: block;
-    }    */
     .check:checked ~ .check-btn {
         display: block;
     }
@@ -492,12 +455,15 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    /* .publication-slide:nth-child(odd) {
-        margin-right: 30px;
-    } */
     .publication-slide {
-        width: 44%;
+        width: 45%;
         min-height: 304px;
+    }
+    .publication-card-picture {
+        margin-bottom: 7px;
+    }
+    .pablication-avtor {
+        margin-bottom: 2px;
     }
     .publication-namePrice {
         width: 100%;
@@ -515,6 +481,7 @@
     .publication-card-btn {
         width: 112px;
         margin-bottom: 50px;
+        font-size: 12.5px;
     }
     .card-content {
         flex-direction: column;
