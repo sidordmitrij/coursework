@@ -108,7 +108,7 @@ selects.forEach((sel) => {
 	effect: 'fade'
     });
 	
-
+//GALLERY
 //Gallery-Swiper	
 	var gallerySwiper = new Swiper('.gallery__slider', {
 
@@ -149,6 +149,10 @@ selects.forEach((sel) => {
 			type: 'fraction',
 		},
 	});
+//Modal
+const modal = new GraphModal();
+
+
 
 
 	//EVENTS
@@ -215,22 +219,6 @@ selects.forEach((sel) => {
 	 })
    }
    showActiveCheckbox();
- 
-
-
-//  window.addEventListener('resize', () => {
-//     eventHidden();
-//   })
-
-//   showMore();
-//   eventHidden();
-//   publicationAccordion();
-//   publicationCheck();
-
-
-
-
-
 
 
 

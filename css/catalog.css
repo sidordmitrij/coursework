@@ -117,6 +117,10 @@
     letter-spacing: -.6px;
 }
 
+.biography--day {
+    line-height: 16px;
+}
+
 .biography {
     min-width: 95%;
 }
@@ -141,11 +145,15 @@
     transition: color .3s linear, border-color .3s linear;
 }
 
-.ui-accordion-header:hover,
-.ui-accordion-header:focus {
+.ui-accordion-header:hover {
     color: var(--lilac);
     /* border-top: 1px solid var(--lilac);
     border-bottom: 1px solid var(--lilac); */
+}
+
+.ui-accordion-header:focus .period-heading-date {
+    color: var(--white);
+    background-color: var(--lilac);
 }
 
 .ui-accordion .ui-accordion-header:active {
@@ -228,6 +236,10 @@
     color: var(--lilac);
 }
 
+.accordion__period-link.tab-active:focus {
+    color: var(--white);
+}
+
 .ui-state-default,
 .ui-widget-content {
     border: none;
@@ -276,7 +288,7 @@
     margin-right: 41px;
     }
     .catalog__tab {
-        margin-bottom: 1px;
+        margin-bottom: 3px;
     }
     .catalog__text {
         margin-bottom: 39px;
@@ -418,7 +430,7 @@
         background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='15' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' fill='%23ECECEC'/%3E%3Ccircle r='15' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' stroke='%23ECECEC'/%3E%3Cpath d='M20 16L15 11L10 16' stroke='black'/%3E%3C/svg%3E%0A") center center no-repeat;
     }
     .catalog__card-picture {
-        margin-bottom: 13px;
+        margin-bottom: 11px;
     }
     
 }

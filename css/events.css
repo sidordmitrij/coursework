@@ -102,6 +102,13 @@
     width: 100%;
 }
 
+
+.events__link.focus-visible {
+    color: var(--white);
+    background-color: var(--lilac);
+    border-bottom: 1px solid var(--white);
+}
+
 .events__btn {
     position: absolute;
     left: calc(100% / 2 - 95px);

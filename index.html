@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/graph-modal-min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -52,6 +53,7 @@
     <script src="js/inputmask.min.js" defer></script>
     <script src="js/just-validate.min.js" defer></script>
     <script src="js/maps.js" defer></script>
+    <script src="js/graph-modal-min.js" defer></script>
     <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU" defer></script> -->
     <script src="js/index.js" defer></script>
 </head>
@@ -71,32 +73,32 @@
                     <nav class="header__nav">
                         <ul class="header__nav-list">
                             <li class="element header__nav-item">
-                                <a href="#about" class="header__nav-link">О нас</a>
+                                <a href="#about" class="header__nav-link element">О нас</a>
                             </li>
                             <li class="element header__nav-item">
-                                <a href="#gallery" class="header__nav-link">Галерея</a>
+                                <a href="#gallery" class="header__nav-link element">Галерея</a>
                             </li>
                             <li class="element header__nav-item">
-                                <a href="#catalog" class="header__nav-link">Каталог</a>
+                                <a href="#catalog" class="header__nav-link element">Каталог</a>
                             </li>
                             <li class="element header__nav-item">
-                                <a href="#events" class="header__nav-link">События</a>
+                                <a href="#events" class="header__nav-link element">События</a>
                             </li>
                             <li class="element header__nav-item">
-                                <a href="#publications" class="header__nav-link">Издания</a>
+                                <a href="#publications" class="header__nav-link element">Издания</a>
                             </li>
                             <li class="element header__nav-item">
-                                <a href="#projects" class="header__nav-link">Проекты</a>
+                                <a href="#projects" class="header__nav-link element">Проекты</a>
                             </li>
                             <li class="element header__nav-item">
-                                <a href="#address" class="header__nav-link">Контакты</a>
+                                <a href="#address" class="header__nav-link element">Контакты</a>
                             </li>
                         </ul>
                     </nav>
                     <a class="header__enter link" tabindex="0">Войти</a>
                 </div>
                 <form action="#" class="header__form-search">
-                    <button class="header-search btn"></button>
+                    <button class="header-search"></button>
                     <input type="text" class="header-search-text">
                 </form>
             </div>
@@ -247,7 +249,7 @@
                 </nav>
                 <form action="#" class="header__bottom-form-search element">
                     <input type="text" class="header-bottom-search-text" placeholder="Поиск по сайту" tabindex="0">
-                    <button class="header-search btn" tabindex="0"></button>
+                    <button class="header-search" tabindex="0"></button>
                 </form>
             </div>
         </div>
@@ -319,175 +321,175 @@
                     </div> 
                     <div class="swiper-wrapper gallery-wrapper">
                         <!-- Slides (слайды) -->
-                        <a href="#modal1" class="swiper-slide gallery-slide">
+                        <a href="#modal1" class="swiper-slide gallery-slide" data-graph-path="modal1">
                             <picture>
                                 <source srcset="img/Rectangle1.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery1.jpg" alt="картина"/>
                             </picture>                            
                         </a>
-                        <a href="#modal2" class="swiper-slide gallery-slide">
+                        <a href="#modal2" class="swiper-slide gallery-slide" data-graph-path="modal2">
                             <picture>
                                 <source srcset="img/Rectangle2.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery2.jpg" alt="картина"/>
                             </picture> 
                         </a>
-                        <a href="#modal3" class="swiper-slide gallery-slide">
+                        <a href="#modal3" class="swiper-slide gallery-slide" data-graph-path="modal3">
                             <picture>
                                 <source srcset="img/Rectangle3.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery3.jpg" alt="картина"/>
                             </picture>   
                         </a>
-                        <a href="#modal4" class="swiper-slide gallery-slide">
+                        <a href="#modal4" class="swiper-slide gallery-slide" data-graph-path="modal4">
                             <picture>
                                 <source srcset="img/Rectangle4.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery4.jpg" alt="картина"/>
                             </picture>                        </a>
-                        <a href="#modal5" class="swiper-slide gallery-slide">
+                        <a href="#modal5" class="swiper-slide gallery-slide" data-graph-path="modal5">
                             <picture>
                                 <source srcset="img/Rectangle5.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery5.jpg" alt="картина"/>
                             </picture>                        </a>
-                        <a href="#modal6" class="swiper-slide gallery-slide">
+                        <a href="#modal6" class="swiper-slide gallery-slide" data-graph-path="modal6">
                             <picture>
                                 <source srcset="img/Rectangle6.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery6.jpg" alt="картина"/>
                             </picture>                        </a>
-                        <a href="#modal7" class="swiper-slide gallery-slide">
+                        <a href="#modal7" class="swiper-slide gallery-slide" data-graph-path="modal7">
                             <picture>
                                 <source srcset="img/Rectangle7.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery7.jpg" alt="картина"/>
                             </picture>                        </a>
-                        <a href="#modal8" class="swiper-slide gallery-slide">
+                        <a href="#modal8" class="swiper-slide gallery-slide" data-graph-path="modal8">
                             <picture>
                                 <source srcset="img/Rectangle8.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery8.jpg" alt="картина"/>
                             </picture>                        </a>
-                        <a href="#modal9" class="swiper-slide gallery-slide">
+                        <a href="#modal9" class="swiper-slide gallery-slide" data-graph-path="modal9">
                             <picture>
                                 <source srcset="img/Rectangle9.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery9.jpg" alt="картина"/>
                             </picture>                        </a>
-                        <a href="#modal10" class="swiper-slide gallery-slide">
+                        <a href="#modal10" class="swiper-slide gallery-slide" data-graph-path="modal10">
                             <picture>
                                 <source srcset="img/Rectangle10.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery10.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal11" class="swiper-slide gallery-slide">
+                        <a href="#modal11" class="swiper-slide gallery-slide" data-graph-path="modal11">
                             <picture>
                                 <source srcset="img/Rectangle11.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery11.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal12" class="swiper-slide gallery-slide">
+                        <a href="#modal12" class="swiper-slide gallery-slide" data-graph-path="modal12">
                             <picture>
                                 <source srcset="img/Rectangle12.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery12.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal13" class="swiper-slide gallery-slide">
+                        <a href="#modal13" class="swiper-slide gallery-slide" data-graph-path="modal13">
                             <picture>
                                 <source srcset="img/Rectangle13.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery13.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal14" class="swiper-slide gallery-slide">
+                        <a href="#modal14" class="swiper-slide gallery-slide" data-graph-path="modal14">
                             <picture>
                                 <source srcset="img/Rectangle14.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery14.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal15" class="swiper-slide gallery-slide">
+                        <a href="#modal15" class="swiper-slide gallery-slide" data-graph-path="modal15">
                             <picture>
                                 <source srcset="img/Rectangle15.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery15.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal16" class="swiper-slide gallery-slide">
+                        <a href="#modal16" class="swiper-slide gallery-slide" data-graph-path="modal16">
                             <picture>
                                 <source srcset="img/Rectangle16.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery16.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal17" class="swiper-slide gallery-slide">
+                        <a href="#modal17" class="swiper-slide gallery-slide" data-graph-path="modal17">
                             <picture>
                                 <source srcset="img/Rectangle17.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery17.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal18" class="swiper-slide gallery-slide">
+                        <a href="#modal18" class="swiper-slide gallery-slide" data-graph-path="modal18">
                             <picture>
                                 <source srcset="img/Rectangle18.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery18.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal19" class="swiper-slide gallery-slide">
+                        <a href="#modal19" class="swiper-slide gallery-slide" data-graph-path="modal19">
                             <picture>
                                 <source srcset="img/Rectangle19.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery19.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal20" class="swiper-slide gallery-slide">
+                        <a href="#modal20" class="swiper-slide gallery-slide" data-graph-path="modal20">
                             <picture>
                                 <source srcset="img/Rectangle20.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery20.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal21" class="swiper-slide gallery-slide">
+                        <a href="#modal21" class="swiper-slide gallery-slide" data-graph-path="modal21">
                             <picture>
                                 <source srcset="img/Rectangle21.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery21.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal22" class="swiper-slide gallery-slide">
+                        <a href="#modal22" class="swiper-slide gallery-slide" data-graph-path="modal22">
                             <picture>
                                 <source srcset="img/Rectangle22.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery22.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal23" class="swiper-slide gallery-slide">
+                        <a href="#modal23" class="swiper-slide gallery-slide" data-graph-path="modal23">
                             <picture>
                                 <source srcset="img/Rectangle23.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery23.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal24" class="swiper-slide gallery-slide">
+                        <a href="#modal24" class="swiper-slide gallery-slide" data-graph-path="modal24">
                             <picture>
                                 <source srcset="img/Rectangle24.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery24.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal25" class="swiper-slide gallery-slide">
+                        <a href="#modal25" class="swiper-slide gallery-slide" data-graph-path="modal25">
                             <picture>
                                 <source srcset="img/Rectangle25.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery25.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal26" class="swiper-slide gallery-slide">
+                        <a href="#modal26" class="swiper-slide gallery-slide" data-graph-path="modal26">
                             <picture>
                                 <source srcset="img/Rectangle26.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery26.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal27" class="swiper-slide gallery-slide">
+                        <a href="#modal27" class="swiper-slide gallery-slide" data-graph-path="modal27">
                             <picture>
                                 <source srcset="img/Rectangle27.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery27.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal28" class="swiper-slide gallery-slide">
+                        <a href="#modal28" class="swiper-slide gallery-slide" data-graph-path="modal28">
                             <picture>
                                 <source srcset="img/Rectangle28.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery28.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal29" class="swiper-slide gallery-slide">
+                        <a href="#modal29" class="swiper-slide gallery-slide" data-graph-path="modal29">
                             <picture>
                                 <source srcset="img/Rectangle29.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery29.jpg" alt="картина"/>
                             </picture>
                         </a>
-                        <a href="#modal30" class="swiper-slide gallery-slide">
+                        <a href="#modal30" class="swiper-slide gallery-slide" data-graph-path="modal30">
                             <picture>
                                 <source srcset="img/Rectangle30.jpg" media="(max-width: 600px)">
                                 <img src="img/gallery30.jpg" alt="картина"/>
@@ -532,7 +534,7 @@
                         <div class="catalog__card" data-target="france1">
                             <img class="catalog__card-picture" src="img/Ambrodgo.jpg" alt="Бергоньоне Амброджо">
                             <h3 class="biography-name">Французский художник 1</h3>
-                            <small class="biography--day">1453  - 1523</small>
+                            <small class="biography--day">1453 - 1523</small>
                             <p class="biography">
                                 Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.
                             </p>
@@ -566,7 +568,9 @@
 
                         <ul class="catalog__accordion">
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="0">C 1400 по 1499 гг.</button>
+                                <button class="period-heading" tabindex="0">
+                                    <span class="period-heading-date">C 1400 по 1499 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france1">Французский художник 1</button>
@@ -584,7 +588,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="1">C 1500 по 1599 гг.</button>
+                                <button class="period-heading" tabindex="1">
+                                    <span class="period-heading-date">C 1500 по 1599 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france3">Французский художник 3</button>
@@ -601,7 +607,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="2">C 1600 по 1699 гг.</button>
+                                <button class="period-heading" tabindex="2">
+                                    <span class="period-heading-date">C 1600 по 1699 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france4">Французский художник 4</button>
@@ -618,7 +626,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="3">C 1700 по 1799 гг.</button>
+                                <button class="period-heading" tabindex="3">
+                                    <span class="period-heading-date">C 1700 по 1799 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france1">Французский художник 1</button>
@@ -635,7 +645,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="4">C 1800 по 1899 гг.</button>
+                                <button class="period-heading" tabindex="4">
+                                    <span class="period-heading-date">C 1800 по 1899 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france3">Французский художник 3</button>
@@ -652,7 +664,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="5">C 1900 по 1999 гг.</button>
+                                <button class="period-heading" tabindex="5">
+                                    <span class="period-heading-date">C 1900 по 1999 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france4">Французский художник 4</button>
@@ -669,7 +683,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="6">C 2000 г.</button>
+                                <button class="period-heading" tabindex="6">
+                                    <span class="period-heading-date">C 2000 г.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="france1">Французский художник 1</button>
@@ -726,7 +742,9 @@
 
                         <ul class="catalog__accordion">
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="0">C 1400 по 1499 гг.</button>
+                                <button class="period-heading" tabindex="0">
+                                    <span class="period-heading-date">C 1400 по 1499 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany1">Немецкий художник 1</button>
@@ -743,7 +761,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="1">C 1500 по 1599 гг.</button>
+                                <button class="period-heading" tabindex="1">
+                                    <span class="period-heading-date">C 1500 по 1599 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany2">Немецкий художник 2</button>
@@ -760,7 +780,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="2">C 1600 по 1699 гг.</button>
+                                <button class="period-heading" tabindex="2">
+                                    <span class="period-heading-date">C 1600 по 1699 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany4">Немецкий художник 4</button>
@@ -777,7 +799,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="3">C 1700 по 1799 гг.</button>
+                                <button class="period-heading" tabindex="3">
+                                    <span class="period-heading-date">C 1700 по 1799 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany1">Немецкий художник 1</button>
@@ -794,7 +818,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="4">C 1800 по 1899 гг.</button>
+                                <button class="period-heading" tabindex="4">
+                                    <span class="period-heading-date">C 1800 по 1899 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany3">Немецкий художник 3</button>
@@ -811,7 +837,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="5">C 1900 по 1999 гг.</button>
+                                <button class="period-heading" tabindex="5">
+                                    <span class="period-heading-date">C 1900 по 1999 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany2">Немецкий художник 2</button>
@@ -828,7 +856,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="6">C 2000 г.</button>
+                                <button class="period-heading" tabindex="6">
+                                    <span class="period-heading-date">C 2000 г.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="germany3">Немецкий художник 3</button>
@@ -901,7 +931,9 @@
 
                         <ul class="catalog__accordion">
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="0">C 1400 по 1499 гг.</button>
+                                <button class="period-heading" tabindex="0">
+                                    <span class="period-heading-date">C 1400 по 1499 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Bindo">Бенедетто ди Биндо</button>
@@ -978,7 +1010,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="1">C 1500 по 1599 гг.</button>
+                                <button class="period-heading" tabindex="1">
+                                    <span class="period-heading-date">C 1500 по 1599 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Dgovanni">Бельгийский художник 4</button>
@@ -1001,7 +1035,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="2">C 1600 по 1699 гг.</button>
+                                <button class="period-heading" tabindex="2">
+                                    <span class="period-heading-date">C 1600 по 1699 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Dgovanni">Бельгийский художник 5</button>
@@ -1024,7 +1060,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="3">C 1700 по 1799 гг.</button>
+                                <button class="period-heading" tabindex="3">
+                                    <span class="period-heading-date">C 1700 по 1799 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Bindo">Бенедетто ди Биндо</button>
@@ -1047,7 +1085,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="4">C 1800 по 1899 гг.</button>
+                                <button class="period-heading" tabindex="4">
+                                    <span class="period-heading-date">C 1800 по 1899 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Bindo">Бонсиньори, Франческо</button>
@@ -1070,7 +1110,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="5">C 1900 по 1999 гг.</button>
+                                <button class="period-heading" tabindex="5">
+                                    <span class="period-heading-date">C 1900 по 1999 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Ambrodgo">Беноццо Гоццоли</button>
@@ -1093,7 +1135,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="6">C 2000 г.</button>
+                                <button class="period-heading" tabindex="6">
+                                    <span class="period-heading-date">C 2000 г.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="Bissolo">Джованни ди Паоло</button>
@@ -1156,7 +1200,9 @@
 
                         <ul class="catalog__accordion">
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="0">C 1400 по 1499 гг.</button>
+                                <button class="period-heading" tabindex="0">
+                                    <span class="period-heading-date">C 1400 по 1499 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="rus1">Российский художник 1</button>
@@ -1185,7 +1231,9 @@
                                 </ul>
                             </li>
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="1">C 1500 по 1599 гг.</button>
+                                <button class="period-heading" tabindex="1">
+                                    <span class="period-heading-date">C 1500 по 1599 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="rus4">Российский художник 4</button>
@@ -1202,7 +1250,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                    <button class="period-heading" tabindex="2">C 1600 по 1699 гг.</button>
+                                    <button class="period-heading" tabindex="2">
+                                        <span class="period-heading-date">C 1600 по 1699 гг.</span>
+                                    </button>
                                     <ul class="accordion__period-list">
                                         <li class="accordion__period-item tab-active">
                                             <button class="accordion__period-link element first-btn" data-path="rus1">Российский художник 5</button>
@@ -1219,7 +1269,9 @@
                                     </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="3">C 1700 по 1799 гг.</button>
+                                <button class="period-heading" tabindex="3">
+                                    <span class="period-heading-date">C 1700 по 1799 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="rus3">Российский художник 3</button>
@@ -1239,7 +1291,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="4">C 1800 по 1899 гг.</button>
+                                <button class="period-heading" tabindex="4">
+                                    <span class="period-heading-date">C 1800 по 1899 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="rus1">Российский художник 1</button>
@@ -1259,7 +1313,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="5">C 1900 по 1999 гг.</button>
+                                <button class="period-heading" tabindex="5">
+                                    <span class="period-heading-date">C 1900 по 1999 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="rus3">Российский художник 3</button>
@@ -1279,7 +1335,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="6">C 2000 г.</button>
+                                <button class="period-heading" tabindex="6">
+                                    <span class="period-heading-date">C 2000 г.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="rus1">Российский художник 1</button>
@@ -1339,7 +1397,9 @@
 
                         <ul class="catalog__accordion">
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="0">C 1400 по 1499 гг.</button>
+                                <button class="period-heading" tabindex="0">
+                                    <span class="period-heading-date">C 1400 по 1499 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="belgiym1">Бельгийский художник 1</button>
@@ -1368,7 +1428,9 @@
                                 </ul>
                             </li>
                             <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="1">C 1500 по 1599 гг.</button>
+                                <button class="period-heading" tabindex="1">
+                                    <span class="period-heading-date">C 1500 по 1599 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="belgiym4">Бельгийский художник 4</button>
@@ -1385,7 +1447,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                    <button class="period-heading" tabindex="2">C 1600 по 1699 гг.</button>
+                                    <button class="period-heading" tabindex="2">
+                                        <span class="period-heading-date">C 1600 по 1699 гг.</span>
+                                    </button>
                                     <ul class="accordion__period-list">
                                         <li class="accordion__period-item tab-active">
                                             <button class="accordion__period-link element first-btn" data-path="belgiym1">Бельгийский художник 5</button>
@@ -1402,7 +1466,9 @@
                                     </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="3">C 1700 по 1799 гг.</button>
+                                <button class="period-heading" tabindex="3">
+                                    <span class="period-heading-date">C 1700 по 1799 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="belgiym3">Бельгийский художник 3</button>
@@ -1422,7 +1488,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="4">C 1800 по 1899 гг.</button>
+                                <button class="period-heading" tabindex="4">
+                                    <span class="period-heading-date">C 1800 по 1899 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="belgiym1">Бельгийский художник 1</button>
@@ -1442,7 +1510,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="5">C 1900 по 1999 гг.</button>
+                                <button class="period-heading" tabindex="5">
+                                    <span class="period-heading-date">C 1900 по 1999 гг.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="belgiym3">Бельгийский художник 3</button>
@@ -1462,7 +1532,9 @@
                                 </ul>
                                 </li>
                                 <li class="accordion__period-time">
-                                <button class="period-heading" tabindex="6">C 2000 г.</button>
+                                <button class="period-heading" tabindex="6">
+                                    <span class="period-heading-date">C 2000 г.</span>
+                                </button>
                                 <ul class="accordion__period-list">
                                     <li class="accordion__period-item tab-active">
                                         <button class="accordion__period-link element first-btn" data-path="belgiym1">Бельгийский художник 1</button>
@@ -1890,9 +1962,9 @@
                 </div>
                 <div class="contact-container">
                     <div class="address__content">
-                        <address class="address__contact">
+                        <address class="address__contact container">
                             <h3 class="contact-name">Шоурум №4</h3>
-                            <span class="contact-street">Леонтьевский переулок, дом 5, строение 1</span>
+                            <span class="contact-street">Леонтьевский переулок, дом 5/1</span>
                             <h3 class="form-fedback-label">Заказать обратный звонок</h3>
                             <form action="https://jsonplaceholder.typicode.com/posts" novalidate="novalidate" autocomplete="on" method="POST" class="form-fedback">
                                 <input type="text" class="fedback-form-element fedback-name" placeholder="Имя*" autocomplete="off" data-validate-field="name" name="name" id="name">
@@ -1931,365 +2003,397 @@
     </div>
 
     <!-- MODAL -->
-    <div id="modal1" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle1.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+    <div class="modal">
+        
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal1">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle1.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                </div>
+            </div>
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal2">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle2.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal3">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle3.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal4">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle4.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal5">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle5.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal6">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle6.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal7">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle7.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal8">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle8.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal9">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle9.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal10">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle10.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal11">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle11.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal12">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle12.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal13">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle13.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal14">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle14.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal15">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle15.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal16">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle16.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal17">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle17.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal18">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle18.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal19">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle19.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal20">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle20.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal21">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle21.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal22">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle22.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal23">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle23.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal24">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle24.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal25">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle25.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal26">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle26.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal27">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle27.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal28">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle28.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal29">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle29.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="modal30">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-box">
+                    <img src="img/Rectangle30.jpg" alt="картина">
+                    <div class="modal__description modal-content">
+                        <h4 class="modal__avtor">Казимир Малевич</h4>
+                        <span class="namePainting">"Женщина с граблями"</span>
+                        <small class="dataPainting">1931-1932</small>
+                        <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
+                    </div>
+                </div>    
             </div>
         </div>
-    </div>
-    <div id="modal2" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle2.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal3" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle3.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal4" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle4.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal5" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle5.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal6" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle6.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal7" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle7.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal8" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle8.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal9" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle9.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal10" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle10.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal11" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle11.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal12" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle12.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal13" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle13.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal14" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle14.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal15" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle15.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal16" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle16.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal17" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle17.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal18" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle18.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal19" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle19.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal20" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle20.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal21" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle21.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal22" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle22.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal23" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle23.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal24" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle24.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal25" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle25.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal26" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle26.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal27" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle27.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal28" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle28.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal29" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle29.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
-    <div id="modal30" class="modal">
-        <div class="modal__container">
-            <img src="img/Rectangle30.jpg" alt="картина">
-            <div class="modal__description">
-                <a href="#exit" class="exit">+</a>
-                <h4 class="modal__avtor">Казимир Малевич</h4>
-                <span class="namePainting">"Женщина с граблями"</span>
-                <small class="dataPainting">1931-1932</small>
-                <p class="discriptionPainting">Эта картина была написана в те времена когда у кого-то что-то происходило...</p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

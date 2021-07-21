@@ -1,7 +1,7 @@
 /*GALLERY*/
 .gallery {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 98px;
     padding: 95px 0 80px;
     color: var(--white);
     background: url(../img/gallery-fon.jpg) center center no-repeat;
@@ -63,6 +63,13 @@
 
 .choices__inner {
     padding: 0 0 0 10px;
+}
+
+.choices__inner:hover,
+#choices--gallery-author-item-choice-1:hover,
+#choices--gallery-author-item-choice-2:hover,
+#choices--gallery-author-item-choice-3:hover {
+    background-color: rgba(99, 99, 99, .2);
 }
 
 .choices__list--dropdown {
