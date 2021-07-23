@@ -9,9 +9,10 @@
 }
 
 .modal-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 47vw;
-    /* max-height: 26vw; */
     position: relative;
     color: black;
     background: #fff;
@@ -23,8 +24,13 @@
 }
 
 .modal__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10% 2% 10% 6%;
 }
 
@@ -54,12 +60,16 @@
 
 @media (max-width: 680px) {
     .modal-box {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 250px;
         
     }
     .modal-box img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100%;
         height: 180px;
     }

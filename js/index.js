@@ -113,9 +113,7 @@ selects.forEach((sel) => {
 	var gallerySwiper = new Swiper('.gallery__slider', {
 
 		slidesPerView: 1,
-		// slidesPerColumn: 1,
-		//spaceBetween: 50,
-		slidesPerGroup: 1,
+			slidesPerGroup: 1,
 	
 		breakpoints: {
 			450: {
@@ -153,8 +151,6 @@ selects.forEach((sel) => {
 const modal = new GraphModal();
 
 
-
-
 	//EVENTS
 	//EVENTS-SWIPER
 	if (document.documentElement.clientWidth < 768) {
@@ -166,11 +162,9 @@ const modal = new GraphModal();
 			pagination: {
 			  	el: '.events__pagination',
 			  	clickable: true,
-				//type: 'fraction',
 			},
 		  });
-		  //swiper.update ()
-		  //eventSwiper.update ()
+		 
 		}
 		
 
@@ -219,8 +213,6 @@ const modal = new GraphModal();
 	 })
    }
    showActiveCheckbox();
-
-
 
 
 	//PUBLICATIONS-SWIPER
@@ -479,10 +471,4 @@ $(document).ready(function() {
 	   return false;
 	});
   });
-
-
-
-
-
-
 });

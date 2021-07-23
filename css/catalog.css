@@ -4,13 +4,19 @@
 }
 
 .catalog__tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 2px;
 }
 
 .catalog__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    transform: translateY(-13px);
+    -webkit-transform: translateY(-13px);
+        -ms-transform: translateY(-13px);
+            transform: translateY(-13px);
 }
 
 .catalog__header {
@@ -27,7 +33,9 @@
     background-color: transparent;
     border: 2px solid var(--dark-lilac);
     border-radius: 50px;
-    transform: translate(-16px, -12px);
+    -webkit-transform: translate(-16px, -12px);
+        -ms-transform: translate(-16px, -12px);
+            transform: translate(-16px, -12px);
 }
 
 .catalog__tab-btn.tab-active::after {
@@ -75,18 +83,17 @@
     margin-bottom: 38px;
 }
 
-/* .catalog__content {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .catalog__country {
     display: none;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
 }
 
 .catalog__country.tab-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -102,10 +109,6 @@
 .catalog__accordion {
     width: 50%;
 }
-/* 
-.catalog__card {
-    margin-right: 15px;
-} */
 
 .catalog__card-picture {
     margin-bottom: 21px;
@@ -140,15 +143,14 @@
     font-weight: 600;
     color: var(--dark-grey);
     background-color: var(--white);
-    /* border-top: 1px solid var(--grey); */
     border-bottom: 1px solid transparent;
+    -webkit-transition: color .3s linear, border-color .3s linear;
+    -o-transition: color .3s linear, border-color .3s linear;
     transition: color .3s linear, border-color .3s linear;
 }
 
 .ui-accordion-header:hover {
     color: var(--lilac);
-    /* border-top: 1px solid var(--lilac);
-    border-bottom: 1px solid var(--lilac); */
 }
 
 .ui-accordion-header:focus .period-heading-date {
@@ -173,13 +175,10 @@
     padding-right: 5em;
 }
 
-/* .ui-accordion .ui-accordion-content:nth-of-type(3n)  
-.accordion__period-item:nth-of-type(3n) {
-    margin-right: 0;
-}*/
-
 .accordion__period-time {
     border-top: 1px solid var(--grey);
+    -webkit-transition: border .3s linear;
+    -o-transition: border .3s linear;
     transition: border .3s linear;
 }
 
@@ -193,7 +192,6 @@
 
 .accordion__period-time:hover {
     border-top: 1px solid var(--lilac);
-    /* border-bottom: 1px solid var(--lilac); */
 }
 
 .accordion__period-time:not(:last-child):hover + .accordion__period-time {
@@ -202,9 +200,15 @@
 
 .accordion__period-list {
     max-height: 340px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .accordion__period-item {
@@ -224,6 +228,8 @@
     line-height: 10px;
     background-color: transparent;
     border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom-color .3s linear, color .3s linear;
+    -o-transition: border-bottom-color .3s linear, color .3s linear;
     transition: border-bottom-color .3s linear, color .3s linear;
 }
 
@@ -256,6 +262,8 @@
     width: 52px;
     height: 52px;
     background: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' fill='%23ECECEC'/%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' stroke='%23ECECEC'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E%0A") center center no-repeat;
+    -webkit-transition: background .3s linear;
+    -o-transition: background .3s linear;
     transition: background .3s linear;
 }
 
@@ -281,11 +289,12 @@
         margin-bottom: 97px;
     }
     .catalog__nav {
-        transform: translateY(-6px);
+        -webkit-transform: translateY(-6px);
+            -ms-transform: translateY(-6px);
+                transform: translateY(-6px);
     }
     .catalog__header {
-    /* margin-left: -3px; */
-    margin-right: 41px;
+       margin-right: 41px;
     }
     .catalog__tab {
         margin-bottom: 3px;
@@ -326,7 +335,9 @@
         margin-right: 39px;
     }
     .catalog__nav {
-        transform: translateY(-13px);
+        -webkit-transform: translateY(-13px);
+            -ms-transform: translateY(-13px);
+                transform: translateY(-13px);
     }
     .catalog__tab-btn {
         width: 50px;
@@ -342,7 +353,10 @@
         margin-bottom: 20px;
     }
     .catalog__country {
-        flex-direction: column-reverse;        
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;        
     }
     .catalog__card,
     .catalog__accordion {
@@ -396,7 +410,9 @@
     .catalog__tab-btn::after {
         width: 44px;
         height: 44px;
-        transform: translate(-13px, -9px);
+        -webkit-transform: translate(-13px, -9px);
+            -ms-transform: translate(-13px, -9px);
+                transform: translate(-13px, -9px);
     }
     .catalog__text {
         display: none;
@@ -437,7 +453,9 @@
 
 @media (max-width: 480px) {
     .catalog__nav {
-        transform: translateY(-11px);
+        -webkit-transform: translateY(-11px);
+            -ms-transform: translateY(-11px);
+                transform: translateY(-11px);
     }
     .biography-name {
         margin-bottom: 3px;
@@ -452,7 +470,8 @@
         padding-right: 3px;
     }
     .accordion__period-list {
-        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
     .accordion__period-list,
     .ui-accordion-content-active {
